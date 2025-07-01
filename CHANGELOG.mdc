@@ -1,0 +1,705 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Changelog
+
+All notable changes to the Solace Landing Page project will be documented in this file.
+
+## [2025.01.23] - Internationalization Bug Fixes & Next.js 15 Compatibility
+
+### Fixed
+- **Next.js 15 Compatibility**: Updated async params handling in locale routes to be compatible with Next.js 15
+  - Fixed `params` destructuring in `src/app/[locale]/layout.tsx` and `page.tsx`
+  - Added proper `await` for params in async route handlers
+- **Hook Migration**: Completed migration from old `useLanguage` to new `useLocale` system
+  - Updated all section components to use `useLocale` instead of `useLanguage`
+  - Fixed import paths from `@/lib/content` to `@/lib/locales`
+  - Updated all `language` references to `locale` throughout components
+- **CTA Section Content Structure**: Fixed content structure mismatch in CTA section
+  - Corrected button text access pattern to match actual content structure
+  - Removed unused local variables causing conflicts
+- **Default Language Confirmation**: Confirmed Turkish (tr) as default language with proper middleware fallback
+  - Middleware properly defaults to Turkish when no locale is detected
+  - Both `/tr` and `/en` routes now load successfully
+  
+### Components Updated
+- `SolaceProblemSection.tsx` - Updated to use `useLocale` and correct content paths
+- `SolaceValuesSection.tsx` - Updated hook usage and added elegant typography classes
+- `SolaceProductsSection.tsx` - Complete rewrite with new locale system and typography
+- `SolaceCtaSection.tsx` - Fixed content structure and removed unused variables
+- `SolaceMissionVisionSection.tsx` - Updated to use new locale system with typography improvements
+- `FooterSection.tsx` - Updated hook usage to use `useLocale`
+
+### Technical Notes
+- All sections now properly use the unified `useLocale` hook system
+- Both Turkish (`/tr`) and English (`/en`) routes confirmed working
+- Application successfully loads with proper font and background systems
+- No remaining `useLanguage` references in active components
+
+## [2025.01.23] - Complete Internationalization & Design Overhaul
+### Added
+- **Internationalization System**: Complete i18n implementation with middleware for `/tr` and `/en` routes
+- **Elegant Typography**: Updated to premium font stack (Cormorant Garamond for headlines, Manrope for body text, Inter for UI)
+- **Solace-Focused Content**: All content now properly reflects Solace Technology's actual products (ENSI and EMA)
+- **Locale-Based Routing**: Dynamic routing system with middleware for language switching
+- **Type-Safe Localization**: Comprehensive TypeScript types for all locale content
+
+### Changed
+- **Navigation**: Updated to Solace branding with proper logo and company information
+- **Content Structure**: Migrated to proper Solace content focusing on ENSI (Smart Home) and EMA (Physical Spaces AI)
+- **Font System**: Replaced fonts with elegant, stylish options for premium feel
+- **Language Switching**: Implemented proper URL-based language switching with `/tr` and `/en` routes
+- **Company Branding**: All references now properly reflect Solace Technology instead of generic content
+
+### Technical Updates
+- Created middleware for locale routing
+- Implemented `useLocale` hook for language management
+- Updated all section components to use new locale system
+- Migrated content to comprehensive locale-based structure
+- Added TypeScript types for all internationalization features
+
+The format is based on [Keep a Changelog](mdc:https:/keepachangelog.com/en/1.0.0),
+and this project adheres to [Semantic Versioning](mdc:https:/semver.org/spec/v2.0.0.html).
+
+## [2025-01-08] - UI Refactoring & Brand Simplification
+
+### Major UI Overhaul
+- **Unified Brand Identity**: Enforced a consistent and clean brand identity across all components, using a strict color palette (`--brand-blue`, `--accent-blue`, `--white`) and typography.
+- **Minimalist & Modern Design**: Refactored all page sections to be more modern, minimalist, and content-focused, removing visual clutter, excessive animations, and complex backgrounds.
+- **Consistent Iconography**: Replaced all emojis and custom SVGs with `lucide-react` icons for a professional and consistent look.
+
+### Component-Specific Refinements
+
+- **Navbar**:
+    - Redesigned to be sleek, minimalistic, and responsive.
+    - Integrated the language switcher, removing it from the Hero section to a centralized location.
+    - Updated logo to `ema_logo.svg` for better quality.
+- **Footer**:
+    - Updated to a light theme to match the overall page aesthetic.
+    - Integrated `useLanguage` for bilingual content.
+    - Added the company logo.
+- **All Page Sections (`SolaceHeroSection`, `SolaceProblemSection`, etc.)**:
+    - Systematically refactored each section to have a primarily white or light-gray background.
+    - Removed inconsistent color schemes (e.g., red/orange in Problem, purple/indigo in Team).
+    - Simplified layouts, cards, and visual elements for a cleaner, more readable experience.
+    - Replaced custom buttons with the standard `Button` component for consistency.
+- **Code Quality**:
+    - Improved code organization within each section by creating dedicated `content` objects for managing static text and translations, making components cleaner and easier to maintain.
+- **Responsiveness**:
+    - Ensured all changes are fully responsive for both mobile and desktop views, providing a seamless experience across all devices.
+
+## [2025-01-07] - Comprehensive Component Enhancement & Full-Screen Design Implementation
+
+### Major Design Improvements
+- **Full-screen impact sections**: Hero, Problem, and CTA sections now use full viewport height for maximum visual impact
+- **Sophisticated typography**: Upgraded to larger, more impactful font sizes (text-7xl, text-8xl) with proper tracking and line heights
+- **Enhanced animations**: Added floating elements, gradient animations, pulse effects, and hover transformations
+- **Professional card layouts**: All sections redesigned with backdrop blur, sophisticated shadows, and elegant borders
+
+### Full-Screen Section Implementations
+
+#### SolaceHeroSection (Full-Screen)
+- **Viewport height**: Now uses `min-h-screen` for maximum impact
+- **Split typography**: Animated gradient text on key words with sophisticated line breaks
+- **Voice wave animations**: Concentric circles with staggered pulse animations around logo
+- **Advanced floating elements**: Geometric elements with custom animation delays
+- **Elegant language toggle**: Positioned absolutely with backdrop blur and hover effects
+- **Professional CTAs**: Larger buttons with icons, advanced hover states, and focus rings
+
+#### SolaceProblemSection (Full-Screen)
+- **Dramatic full-screen presentation**: `min-h-screen` with powerful visual hierarchy
+- **Problem cards redesign**: White translucent cards with backdrop blur and lift animations
+- **Enhanced quote presentation**: Large blockquote with decorative quote marks and gradient backgrounds
+- **Warning theme**: Subtle red/orange accents to emphasize technology problems
+- **Floating warning elements**: Subtle animated indicators throughout the background
+
+#### SolaceCtaSection (Full-Screen)
+- **Powerful dark theme**: Gradient dark background for maximum contrast and impact
+- **Grid pattern overlay**: Subtle animated background pattern for texture
+- **Three-column CTA layout**: Each button in its own card with unique variants and animations
+- **Icon integration**: Relevant icons for each CTA type (demo, partnership, contact)
+- **Stats integration**: Bottom statistics grid with hover animations
+- **Priority indicators**: Visual badges and urgency indicators
+
+### Enhanced Standard Sections
+
+#### SolaceValuesSection
+- **Larger icon containers**: 24x24 size with sophisticated hover animations and pulse rings
+- **Improved typography**: Larger headlines (text-7xl) with better spacing and hierarchy
+- **Custom SVG icons**: Replaced emoji with professional SVG icons for consistency
+- **Floating animation**: Custom CSS keyframe animations for background elements
+- **Enhanced empathy statement**: Larger card with gradient backgrounds and accent lines
+
+#### SolaceMissionVisionSection
+- **Two-card layout**: Side-by-side cards with individual themes and color schemes
+- **Quote styling**: Large decorative quote marks with italic typography
+- **Connection elements**: Visual line and symbol connecting mission and vision
+- **Badge indicators**: Color-coded badges for Mission (brand-blue) and Vision (accent-blue)
+- **Hover transformations**: Lift animations and glow effects on interaction
+
+#### SolaceProductsSection
+- **Premium product cards**: Larger cards with sophisticated shadows and border effects
+- **Background patterns**: Subtle SVG patterns specific to each product
+- **Enhanced feature lists**: Gradient checkmark icons with proper spacing
+- **Dramatic hover effects**: Scale transforms, shadow changes, and glow effects
+- **Logo presentations**: Proper aspect ratios with drop shadows and hover scaling
+
+#### SolaceHowItWorksSection
+- **Process visualization**: Connected workflow with arrows and connection lines
+- **Step numbering**: Large numbered badges with gradient backgrounds
+- **Icon containers**: 28x28 professional containers with border effects
+- **Card-based descriptions**: Each step in elegant white cards with backdrop blur
+- **Pulse animations**: Ring animations around icons on hover
+
+#### SolaceProofSection
+- **Success theme**: Green/blue color scheme to emphasize achievements
+- **Traction cards**: Professional cards with success badges and hover transformations
+- **Gradient CTA card**: Powerful brand gradient background with integrated statistics
+- **Achievement badges**: Animated success indicators on card hover
+- **Statistics integration**: Live stats display within the trust message card
+
+#### SolaceTeamSection
+- **Team highlight cards**: Professional presentation of team capabilities
+- **Expertise breakdown**: Detailed skill categorization with color-coded sections
+- **Purple theme**: Sophisticated purple/indigo color scheme for expertise
+- **Icon presentations**: Large team icons with proper sizing and effects
+- **Credibility statement**: Enhanced with team icon and skill breakdown
+
+### Technical Enhancements
+
+#### Animation System
+- **Custom CSS animations**: Float, gradient-x, and pulse animations with proper timing
+- **Staggered delays**: Coordinated animation timing across floating elements
+- **Performance optimized**: Hardware accelerated transforms and opacity changes
+- **Backdrop effects**: Professional backdrop-blur effects throughout
+
+#### Typography System
+- **Massive headlines**: Up to text-8xl for maximum impact
+- **Proper hierarchy**: Consistent font sizing with semantic meaning
+- **Line height optimization**: Tight leading for impact, relaxed for readability
+- **Font weight coordination**: Bold for impact, light for elegance
+
+#### Color Enhancement
+- **Brand color integration**: Consistent use of brand-blue and accent-blue
+- **Gradient applications**: Strategic use of gradients for visual interest
+- **Opacity management**: Sophisticated transparency levels for depth
+- **Theme consistency**: Each section has its own subtle color theme while maintaining brand unity
+
+#### Interaction Design
+- **Hover transformations**: Scale, translate, and shadow effects
+- **Focus management**: Proper focus rings and accessibility considerations
+- **Button enhancements**: Multiple variants with appropriate visual hierarchy
+- **Card interactions**: Consistent lift and glow effects across all card components
+
+### Responsive Design
+- **Mobile optimization**: All components work seamlessly on mobile devices
+- **Breakpoint coordination**: Consistent responsive behavior across all sections
+- **Touch interactions**: Proper touch targets and mobile hover alternatives
+- **Performance considerations**: Optimized for mobile rendering and animation performance
+
+### Content Flow Enhancement
+- **Visual rhythm**: Alternating white and gray backgrounds for visual breathing room
+- **Section transitions**: Smooth visual flow between different content areas
+- **Full-screen impact**: Key sections demand attention with full viewport usage
+- **Hierarchy clarity**: Clear visual hierarchy guides user attention through the content
+
+### Implementation Quality
+- **Code consistency**: All components follow the same design patterns and conventions
+- **Maintainability**: Clean, well-structured component code with proper TypeScript typing
+- **Performance optimization**: Efficient animations and rendering considerations
+- **Accessibility compliance**: Proper semantic HTML, focus management, and ARIA considerations
+
+This update transforms the Solace landing page into a premium, enterprise-grade presentation that effectively communicates the company's sophistication and technological capability while maintaining excellent user experience across all devices.
+
+---
+
+## [Unreleased]
+
+### Major Update - Solace Company Rebranding
+- **BREAKING CHANGE**: Transitioned from EMA-focused to Solace company-wide landing page
+- **Created**: `solace-landing-page-structure.mdc` - Complete Solace landing page component structure
+- **Created**: `solace-information.mdc` - Comprehensive Solace company information and values
+- **Created**: `solace-content-flow.mdc` - Complete content flow showcasing both Ensi and EMA products
+- **Created**: `solace-detailed-experience.mdc` - Detailed visual and interactive experience description
+- **Removed**: `ema-flow-detailed-react-components.mdc` - Replaced with Solace-focused structure
+- **Removed**: `EMA-information.mdc` - Replaced with comprehensive company information
+- **Removed**: `main-flow-description.mdc` - Replaced with Solace detailed experience
+- **Removed**: `main-flow.mdc` - Replaced with complete Solace content flow
+
+### Content Changes
+- Updated taglines: "Teknolojiyi konuşma kolaylığında sunuyoruz" / "Technology, at the ease of natural conversation"
+- Added bilingual support (Turkish/English) throughout all content
+- Repositioned EMA as one of two products under Solace brand (alongside Ensi)
+- Enhanced company values: Human-first, Voice-powered, Privacy-respecting
+- Added comprehensive mission and vision statements
+- Included team expertise and market traction sections
+- Added multiple CTA options for different engagement levels
+
+### Structure Updates
+- Hero section now represents entire Solace company
+- Added Values section highlighting human-first approach
+- Added Mission & Vision section for company purpose
+- Added Products section showcasing both Ensi and EMA
+- Added How It Works section for universal voice interaction
+- Added Proof & Traction section for credibility
+- Added Team section for expertise showcase
+- Enhanced CTA section with multiple engagement options
+
+### Implementation Updates
+- **Created**: `src/lib/content.ts` - Bilingual content management system with TypeScript interfaces
+- **Created**: `src/hooks/useLanguage.tsx` - Language context and hooks for TR/EN switching
+- **Created**: `src/components/pages/main/sections/SolaceHeroSection.tsx` - New hero with language toggle and voice animations
+- **Created**: `src/components/pages/main/sections/SolaceProblemSection.tsx` - Problem section with structured content
+- **Created**: `src/components/pages/main/sections/SolaceValuesSection.tsx` - Company values with interactive cards
+- **Created**: `src/components/pages/main/sections/SolaceProductsSection.tsx` - Ensi & EMA product showcase
+- **Created**: `src/components/pages/main/sections/SolaceCtaSection.tsx` - Multiple CTA options section
+- **Updated**: `src/components/pages/main/MainPage.tsx` - Replaced EMA components with Solace structure
+- **Updated**: `src/app/globals.css` - Added custom brand colors (--brand-blue: #242A86, --accent-blue: #4ED4F9)
+
+### Image Path Updates
+- Added proper image paths and aspect ratios to all MDC files:
+  - `/branding/solace_logo_small.svg` (1:1, 200x200px for hero, 120x120px for footer)
+  - `/branding/ensi_logo.png` (16:9, 320x180px)
+  - `/branding/ema_logo.png` (16:9, 320x180px)
+
+### Added
+- **EmaModal Component**: Implemented persistent floating chat modal component
+  - Floating action button positioned in bottom-right corner
+  - Auto-open functionality based on scroll position (75%) and exit intent
+  - Multi-stage modal with hero screen and embedded chat iframe
+  - Tooltip appears after 8 seconds of inactivity
+  - Notification badge with pulsing animation
+  - Keyboard navigation support (ESC to close)
+  - Customizable branding, colors, and messaging
+  - Support for product thumbnails and social proof display
+  - Integrated into main layout for global availability
+
+### Changed
+- Updated main layout to include EmaModal component globally
+- **EmaModal Behavior**: Modified to skip hero stage and open directly to chat interface
+- **EMA URL**: Updated to use Greyder-specific EMA instance (https://live.ema.solace.com.tr/greyder)
+- **Full-Screen Experience**: Simplified modal to truly cover entire viewport
+  - Replaced Dialog component with custom full-screen implementation
+  - Direct DOM manipulation for complete viewport coverage
+  - Clean z-index stacking (9999) for proper layering
+  - Body scroll prevention when modal is open
+  - Elegant close button with backdrop blur effect
+  - Enhanced loading state with Turkish text
+  - Simplified HTML structure for better performance
+- **Smooth Animations**: Added elegant open/close animations
+  - Fade and scale transitions for modal opening/closing
+  - Staggered animations with delays for content elements
+  - Button animations with hover and active states
+  - Backdrop fade-in/out with click-to-close functionality
+  - Slide-up animations for chat content and close button
+  - Loading state animations with proper timing
+  - Iframe fade-in after content loads
+  - 300ms duration with ease-out timing for smooth feel
+- **Updated Button Design**: Enhanced floating action button
+  - Replaced "EMA" text with EMA logo image
+  - Added proper logo styling with white filter for visibility
+  - Updated tooltip message to "Ne arıyorsan, konuş yeter."
+  - Maintained all animation and interaction states
+- **Persistent Text Feature**: Added always-visible text alongside button
+  - Text "Ne arıyorsan, konuş yeter." now always visible next to button
+  - Responsive design with different sizes for mobile/desktop
+  - Clean white bubble design with hover effects
+  - Scales with button animations for cohesive experience
+  - Mobile optimizations: smaller text (xs/sm), reduced padding and gaps
+  - Desktop enhancements: larger text (md/base), more spacing
+  - Proper positioning adjustments for small screens
+- EMA Modal artık butondan çıkarak büyüme (scale-up) ve butona geri dönerek küçülme (scale-down) animasyonuna sahip.
+- Modal açıldığında sayfanın geri kalanını flulaştıran (backdrop-blur) bir arka plan eklendi.
+- Modal butonu içindeki EMA logosu daha estetik bir görünüm için yeniden boyutlandırıldı ve ortalandı.
+- Modal'ın açılış/kapanış animasyon hızı ve yumuşaklığı (easing) iyileştirildi.
+
+### Technical Details
+- Added `EmaModal.tsx` component in `/src/components/`
+- Integrated with existing UI components (Dialog, Button, Tooltip)
+- Uses local storage to track auto-open state
+- Responsive design with full-screen modal on mobile
+- Iframe embedding for live chat functionality
+
+### 2024-07-25
+
+**EmaModal Component Enhancements**
+
+- **Animation Rework**:
+    - Implemented a "scale from button" effect for a more fluid opening and closing animation. The modal now appears to emerge from and return to the floating button.
+    - Adjusted animation duration to `500ms` and used an `ease-in-out` timing function for a smoother experience.
+- **Visual Integration**:
+    - Added a `backdrop-blur-sm` effect to the modal's background, creating a sense of depth and keeping the main site context visible.
+    - Updated the background overlay to `bg-black/10` for a more subtle effect.
+- **Button & Logo Polish**:
+    - The floating action button's logo is now perfectly centered using flexbox properties.
+    - The EMA logo size has been adjusted for better visual balance within the button.
+    - Removed explicit padding from the button to rely on flexbox for centering.
+
+### 2024-07-24
+
+**Initial EmaModal Implementation**
+
+- **Core Functionality**:
+    - Implemented the persistent floating chat modal (`EmaModal.tsx`).
+    - The modal can be triggered by user actions (scroll, exit-intent) or manually.
+    - Includes a loading state and embeds the EMA chat via an iframe.
+- **User Experience**:
+    - A tooltip ("Ne arıyorsan, konuş yeter.") appears after 8 seconds to encourage interaction.
+    - A pulsing notification badge draws initial attention.
+    - The modal is fully responsive and provides a full-screen experience on all devices.
+- **Branding & Customization**:
+    - The component is customizable for different brands, logos, and color schemes.
+
+## [2025-01-07] - Elegant Notion-Inspired Design Overhaul
+
+### Major Visual Redesign
+- **Complete design transformation**: Redesigned all Solace components with elegant, white-background design inspired by Notion
+- **Color scheme simplification**: 
+  - Primary background: White (#FFFFFF)
+  - Secondary background: Light gray (#F9FAFB)
+  - Primary accent: Brand Blue (#242A86)
+  - Secondary accent: Accent Blue (#4ED4F9)
+  - Typography: Clean grays (#111827, #374151, #6B7280)
+
+### Component Redesigns
+
+#### SolaceHeroSection
+- **Clean minimal hero**: Removed dark gradient backgrounds, implemented clean white design
+- **Sophisticated typography**: Improved font hierarchy with proper tracking and weights
+- **Language toggle**: Redesigned as subtle button with flag icons and clean styling
+- **Logo presentation**: Logo now displayed in elegant white card with subtle shadow
+- **CTA buttons**: Clean primary/secondary button styling with proper focus states
+
+#### SolaceProblemSection
+- **White card layout**: Problems displayed in clean white cards with subtle borders
+- **Icon redesign**: Replaced emoji with clean SVG warning icons
+- **Quote styling**: Elegant blockquote with subtle accent lines and proper typography
+- **Removed dark backgrounds**: Now uses light gray background with white cards
+
+#### SolaceValuesSection
+- **Minimalist value cards**: Clean white background with SVG icons instead of gradients
+- **Icon mapping**: Replaced emoji with professional SVG icons (user, microphone, lock, lightbulb)
+- **Hover states**: Subtle color transitions on icon backgrounds
+- **Typography improvement**: Better spacing and font weights
+
+#### SolaceProductsSection
+- **Clean product cards**: White cards with gray backgrounds for logo sections
+- **Professional layout**: Proper content hierarchy with consistent spacing
+- **Feature lists**: Clean checkmark icons with proper list styling
+- **CTA buttons**: Subtle branded buttons with hover states
+
+#### New Sections Created
+- **SolaceMissionVisionSection**: Clean two-column layout for mission and vision statements
+- **SolaceHowItWorksSection**: Step-by-step process with numbered icons and arrows
+- **SolaceProofSection**: Traction points in clean grid layout with icon mapping
+- **SolaceTeamSection**: Team highlights with consistent card styling
+- **Updated SolaceCtaSection**: Clean white design with multiple CTA variants
+
+### Technical Improvements
+- **Consistent spacing**: All sections use consistent padding (py-20) and margins
+- **Typography system**: Implemented consistent font sizes, weights, and line heights
+- **Color system**: Proper use of CSS custom properties for brand colors
+- **Responsive design**: All components maintain mobile responsiveness
+- **Focus states**: Proper accessibility with focus rings and keyboard navigation
+- **SVG icons**: Replaced emoji with scalable SVG icons for consistency
+
+### Content Structure
+- **Maintained bilingual support**: All Turkish/English content preserved
+- **Enhanced content flow**: Logical progression from problem to solution to proof
+- **Professional messaging**: Consistent voice and terminology throughout
+
+### Design Philosophy
+- **Notion-inspired**: Clean, minimal, professional aesthetic
+- **White-first approach**: Majority white backgrounds with selective color usage
+- **Technological yet approachable**: Balance between sophistication and accessibility
+- **Elegant interactions**: Subtle hover states and smooth transitions
+- **Content-focused**: Design supports rather than dominates the messaging
+
+### Page Structure Updated
+- Hero → Problem → Values → Mission/Vision → Products → How It Works → Proof → Team → CTA → Footer
+- Logical flow from company introduction to credibility building to action
+
+### Files Modified
+- `src/components/pages/main/sections/SolaceHeroSection.tsx` - Complete redesign
+- `src/components/pages/main/sections/SolaceProblemSection.tsx` - Clean white styling
+- `src/components/pages/main/sections/SolaceValuesSection.tsx` - SVG icons and minimal design
+- `src/components/pages/main/sections/SolaceProductsSection.tsx` - Professional card layout
+- `src/components/pages/main/sections/SolaceCtaSection.tsx` - Clean CTA design
+- `src/components/pages/main/MainPage.tsx` - Added new sections to component flow
+
+### Files Created
+- `src/components/pages/main/sections/SolaceMissionVisionSection.tsx` - Mission and vision layout
+- `src/components/pages/main/sections/SolaceHowItWorksSection.tsx` - Process explanation
+- `src/components/pages/main/sections/SolaceProofSection.tsx` - Traction and credibility
+- `src/components/pages/main/sections/SolaceTeamSection.tsx` - Team highlights
+
+### Impact
+- **Professional appearance**: Site now has sophisticated, enterprise-ready design
+- **Improved readability**: Better typography and spacing enhance user experience  
+- **Brand consistency**: Cohesive use of colors and styling throughout
+- **Accessibility**: Proper contrast ratios and focus states
+- **Mobile optimization**: All sections work seamlessly on mobile devices
+- **Performance**: Lighter design with fewer heavy graphics and animations
+
+---
+
+## [2025-01-06] - Solace Company-Wide Landing Page Implementation
+
+### Major Rebranding and Structure
+- **Company-wide approach**: Transformed from EMA-specific to comprehensive Solace company presentation
+- **Bilingual content system**: Implemented Turkish/English content management with TypeScript safety
+- **Complete content restructuring**: New sections for hero, problem, values, products, CTA, and footer
+
+### New Bilingual Content System
+- **TypeScript interfaces**: BilingualContent, ProductInfo, ValueCard, TractionPoint, TeamHighlight
+- **Comprehensive content structure**: `SolaceContent` interface covering all landing page sections
+- **Language management**: Context provider with localStorage persistence (`useLanguage.tsx`)
+
+### New Components Created
+- `SolaceHeroSection.tsx` - Voice-focused hero with language toggle and dual CTAs
+- `SolaceProblemSection.tsx` - Technology problems grid with empathy messaging
+- `SolaceValuesSection.tsx` - Company values with interactive cards
+- `SolaceProductsSection.tsx` - Dual product showcase (Ensi & EMA)
+- `SolaceCtaSection.tsx` - Multi-option call-to-action section
+
+### Content Structure Implementation
+- **Hero section**: Company tagline, subtitle, CTAs, and logo display
+- **Problem section**: 5 technology problems with empathy quote
+- **Values section**: 4 core values (Human-first, Voice-powered, Privacy-respecting, Intuitive Design)
+- **Products section**: Ensi (Smart Home) and EMA (Physical Spaces) with features and links
+- **CTA section**: Multiple engagement options (Demo, Partnership, Contact)
+
+### Files Updated
+- `src/lib/content.ts` - Complete bilingual content system
+- `src/hooks/useLanguage.tsx` - Language context provider
+- `src/components/pages/main/MainPage.tsx` - New component integration
+- `src/app/globals.css` - Brand color CSS custom properties
+
+### Brand Implementation
+- **Primary colors**: Brand Blue (#242A86), Accent Blue (#4ED4F9)
+- **Design system**: Consistent spacing, typography, and color usage
+- **Responsive design**: Mobile-first approach maintained throughout
+
+### MDC Documentation
+- **Updated landing page structure**: Complete React component hierarchy
+- **Image specifications**: Logo paths and ratios for branding assets
+- **Content flow documentation**: Detailed user journey and messaging strategy
+
+---
+
+## [2025-01-05] - Updated MDC Files Based on Solace High-Level Flow
+
+### MDC File Updates
+- **Updated**: `.cursor/rules/solace-landing-page-structure.mdc` with proper image paths and ratios
+- **Created**: `solace-landing-page-structure.mdc` with complete React component structure  
+- **Created**: `solace-information.mdc` with comprehensive company information
+- **Created**: `solace-content-flow.mdc` with complete content flow
+- **Created**: `solace-detailed-experience.mdc` with visual experience description
+
+### Image Path Specifications
+- `/branding/solace_logo_small.svg` (1:1 ratio, 200x200px for hero, 120x120px for footer)
+- `/branding/ensi_logo.png` (16:9 ratio, 320x180px)
+- `/branding/ema_logo.png` (16:9 ratio, 320x180px)
+
+### Content Structure
+- **Company-wide approach**: Solace umbrella with Ensi and EMA products
+- **Bilingual support**: Turkish and English content throughout
+- **Voice-focused messaging**: Emphasis on conversation-based technology
+- **Brand consistency**: Human-first, Voice-powered, Privacy-respecting values
+
+### Deleted Legacy Files
+- `ema-flow-detailed-react-components.mdc`
+- `EMA-information.mdc` 
+- `main-flow-description.mdc`
+- `main-flow.mdc`
+
+### Technical Implementation
+- React component hierarchy defined
+- TypeScript interfaces for content management
+- Responsive design requirements specified
+- Brand color specifications documented
+
+## [2025.01.23] - Futuristic Background System Implementation
+### Added
+- Futuristic gradient background system with glassmorphism effects
+- Consistent background classes: `bg-futuristic-mesh`, `bg-glassmorphism`, `bg-glassmorphism-card`, `bg-gradient-animated`
+- Floating particles animation effect for enhanced futuristic aesthetics
+- Proper dark/light mode support for all background elements
+
+### Changed
+- Updated main layout to use `bg-futuristic-mesh` with floating particles
+- Standardized all section backgrounds to follow alternating pattern:
+  - Hero, Values, Mission/Vision, Proof: transparent (showing main mesh)
+  - Problem, Products, How It Works, Team, Plan: glassmorphism effect
+  - CTA: animated gradient background
+  - Footer: glassmorphism effect
+- Replaced all hardcoded background colors (`bg-white`, `bg-gray-50`, etc.) with theme-consistent classes
+- Updated all card components to use `bg-glassmorphism-card` for consistency
+
+### Fixed
+- Background inconsistencies across different sections
+- Improper dark mode support in various components
+- Non-responsive background styling
+- Missing futuristic aesthetic elements as per design requirements
+
+## [2025-01-11] - SolaceProblemSection Complete Design Overhaul
+
+### Enhanced Design Features
+- **2x2 Grid Layout**: Redesigned problem cards in perfect 2x2 grid for optimal visual balance
+- **Futuristic Glassmorphism**: Enhanced backdrop-blur effects with sophisticated border treatments
+- **Interactive Animations**: Smooth hover effects with card lifting, scaling, and glow transitions
+- **Dynamic Background**: Animated floating orbs with brand colors for depth and movement
+- **Enhanced Typography**: Improved hierarchy with section badges, subtitles, and better spacing
+
+### Visual Improvements
+- **Meaningful Icons**: Added specific icons for each problem type (Smartphone, Globe, Users, Zap)
+- **Advanced Hover States**: Multi-layer hover effects including background glow and animated borders
+- **Brand Color Integration**: Consistent use of brand-blue and accent-blue throughout
+- **Enhanced Quote Section**: Redesigned empathy quote with glassmorphism container and centered icon
+- **Responsive Excellence**: Optimized for all screen sizes with proper mobile adaptation
+
+### Technical Enhancements
+- **Gradient Backgrounds**: Implemented multi-layer gradient backgrounds with brand colors
+- **Animation System**: Added staggered animations with different delay timings
+- **Backdrop Effects**: Enhanced blur and transparency for modern glass-like appearance
+- **Transition Smoothness**: Implemented 500ms duration transitions for premium feel
+- **Accessibility**: Maintained proper contrast ratios and readable typography
+
+### UX/UI Benefits
+- **Visual Hierarchy**: Clear problem identification with enhanced readability
+- **Engagement**: Interactive hover states encourage user exploration
+- **Brand Consistency**: Unified design language matching the futuristic brand aesthetic
+- **Content Organization**: Better information architecture with the 2x2 grid structure
+
+---
+
+## [2025-01-11] - Comprehensive Image Branding Update
+
+### Changed
+- **Standardized Logo Usage**: Replaced all images throughout the app with `/branding/solace_logo_small.svg` for consistent branding
+- **Product-Specific Logos**: Updated ENSI and EMA product sections to use `/branding/ensi_logo.png` and `/branding/ema_logo.png` respectively
+- **Navbar Logo**: Updated from `logo_big.png` to `solace_logo_small.svg`
+- **Hero Section Logo**: Updated from `logo_big.png` to `solace_logo_small.svg`
+- **Footer Logo**: Updated from `ema_mark.svg` to `solace_logo_small.svg`
+- **Partners Section**: Replaced all partner logos (AFEX, Greyder, Integral) with `solace_logo_small.svg`
+
+### Technical Updates
+- **Locales Configuration**: Updated product logoSrc paths from `.svg` to `.png` format
+- **Image Sources Updated**: 
+  - `SolaceHeroSection.tsx` → `solace_logo_small.svg`
+  - `Navbar.tsx` → `solace_logo_small.svg`
+  - `FooterSection.tsx` → `solace_logo_small.svg`
+  - `PartnersSection.tsx` → `solace_logo_small.svg` (all partners)
+  - `locales.ts` → `ensi_logo.png` and `ema_logo.png` for products
+
+### Consistency Achieved
+- All non-product sections now display Solace branding exclusively
+- Product sections properly showcase ENSI and EMA individual logos
+- Unified visual identity across the entire application
+
+---
+
+## [2025-01-11] - Hero Section Brand Color Enhancement & Turkish Redirect
+
+### Added
+- Enhanced brand color usage throughout hero section with prominent `brand-blue` styling
+- Automatic redirect to `/tr` (Turkish) route for all users accessing root URL
+- Beautiful display of "Teknolojiyi Konuşma Kolaylığında Sunuyoruz" with brand colors
+- Enhanced visual hierarchy with larger, animated gradient subheadline
+- Multiple gradient background layers with brand colors for logo area
+- Shadow effects and smooth transitions on buttons with brand color theming
+- Brand-colored scroll indicator
+
+### Changed
+- Hero headline now displays in brand-blue color instead of default text color
+- Subheadline "Sunuyoruz" increased to text-8xl with enhanced gradient animation
+- Button styling updated to prominently feature brand-blue with hover effects
+- Background elements strengthened with higher brand color opacity
+- Logo area enhanced with multi-layer gradient effects using brand colors
+- **UPDATED**: Subheadline "Sunuyoruz"/"Natural Conversation" changed from gradient to solid brand-blue for consistency
+
+### Technical
+- Updated SolaceHeroSection.tsx with enhanced brand color integration
+- Confirmed middleware.ts properly configured for automatic Turkish redirect
+- Turkish set as default locale with proper browser language detection
+
+---
+
+## [2025-01-11] - Internationalization & Design System Implementation
+
+### Added
+- **Complete Internationalization System**: Full Turkish/English language support with URL-based routing (`/tr`, `/en`)
+- **Premium Typography System**: Cormorant Garamond (headlines), Manrope (body), Inter (UI) with proper CSS variables
+- **Futuristic Design System**: Glassmorphism effects, animated mesh gradients, floating particles
+- **Authentic Solace Content**: Real company information, ENSI & EMA product details, actual market traction
+- **Responsive Components**: All sections optimized for mobile and desktop viewing
+
+### Changed
+- **Font System**: Replaced default fonts with premium typography stack
+- **Background System**: Implemented consistent futuristic mesh gradient backgrounds across all sections
+- **Content Structure**: Updated all content to reflect authentic Solace Technology information
+- **Navigation**: Enhanced navbar with proper Solace branding and language switcher
+- **Footer**: Updated with real Solace contact information and company details
+
+### Technical
+- **Middleware Implementation**: Automatic locale detection and routing
+- **Type Safety**: Comprehensive TypeScript interfaces for all localized content
+- **Hook System**: Custom useLocale hook for language management
+- **Routing Structure**: Locale-based routing with proper Next.js 15 compatibility
+- **Content Management**: Centralized locales.ts with complete bilingual content
+
+### Fixed
+- **Runtime Errors**: Resolved useLocale provider hierarchy issues
+- **Route Conflicts**: Removed conflicting page structures
+- **Hook Migration**: Updated all sections from useLanguage to useLocale
+- **Next.js 15 Compatibility**: Fixed async params handling in locale routes
+- **Content Access**: Resolved CTA section content pattern errors
+
+### Removed
+- Old layout.tsx file that was causing routing conflicts
+- Deprecated useLanguage hook references
+- Generic placeholder content replaced with authentic Solace information
+
+---
+
+## [2025-01-11] - Initial Project Setup
+
+### Added
+- Next.js 15 project structure with TypeScript
+- Component library with shadcn/ui integration
+- Basic routing and page structure
+- Essential dependencies and configuration files
+
+## [2025-01-11] - CTA Text & Color Scheme Update to #4caae5
+
+### Content Updates
+- **CTA Text Refinement**: Updated call-to-action text for immediate impact:
+  - **Turkish**: "Bugün konuşmaye başlayın, yarın teknolojinin gücünü hissedin" → "Bugün konuşmaye başlayın, teknolojinin gücünü hemen hissedin"
+  - **English**: "Start talking today, feel the power of technology tomorrow" → "Start talking today, feel the power of technology right now"
+
+### Color System Overhaul
+- **New Accent Color**: Updated accent-blue from #4ed4f9 to #4caae5 throughout the entire application
+- **Hero Section Enhancement**: Second part of hero text ("Sunuyoruz"/"Natural Conversation") now uses the new #4caae5 color
+- **Button Color Updates**: Secondary buttons and dark mode buttons updated to use new accent color
+- **Scroll Indicator**: Updated to use new accent color for visual consistency
+
+### Global CSS Changes
+- **CSS Variable Update**: `--accent-blue` now set to #4caae5 in globals.css
+- **Automatic Propagation**: All accent-blue usages throughout the app automatically updated
+- **Dark Mode Compatibility**: Maintained proper contrast and visibility in both light and dark themes
+
+### Component-Specific Updates
+- **SolaceHeroSection**: Subheadline text and secondary button now use new accent color
+- **Navbar**: Dark mode buttons updated for better visual hierarchy with new accent color
+- **Consistent Brand Identity**: All gradient backgrounds, icons, and accent elements now use #4caae5
+
+### UX Benefits
+- **Immediate Action**: CTA text emphasizes instant gratification rather than future benefits
+- **Visual Harmony**: New accent color provides better brand cohesion throughout the application
+- **Enhanced Readability**: Improved color contrast and visual hierarchy
+
+---
+
+## [2025-01-11] - SolaceProblemSection Complete Design Overhaul

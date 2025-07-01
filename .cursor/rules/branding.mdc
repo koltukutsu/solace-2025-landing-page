@@ -1,0 +1,28 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+/* styles/globals.css */
+:root {
+  --brand-blue: #242A86;
+  --accent-blue: #4ED4F9;
+  --white: #FFFFFF;
+}
+
+.text-brand {
+  color: var(--brand-blue);
+}
+.text-accent {
+  color: var(--accent-blue);
+}
+.bg-white {
+  background-color: var(--white);
+}
+
+// styles/spacing.scss or tailwind.config.js (if using Tailwind)
+$space-xs: 4px;
+$space-sm: 8px;
+$space-md: 16px;
+$space-lg: 32px;
+$space-xl: 64px;
