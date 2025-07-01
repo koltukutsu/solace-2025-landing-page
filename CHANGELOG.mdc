@@ -5,6 +5,18 @@ alwaysApply: false
 ---
 # Changelog
 
+## [Unreleased] - 2025-01-02
+
+### Fixed
+- **Root Page Routing**: Added missing root page at `/src/app/page.tsx` to fix 404 error on root route
+  - Created proper redirect from `/` to `/tr` using Next.js `redirect` function
+  - Works in conjunction with existing middleware for seamless Turkish locale redirection
+
+### Removed
+- Legal directory and all legal pages (privacy policy, cookie policy, data protection)
+- Legal section from FooterSection component
+- All legal-related content and links from footer
+
 All notable changes to the Solace Landing Page project will be documented in this file.
 
 ## [2025.01.23] - Internationalization Bug Fixes & Next.js 15 Compatibility
@@ -703,3 +715,237 @@ This update transforms the Solace landing page into a premium, enterprise-grade 
 ---
 
 ## [2025-01-11] - SolaceProblemSection Complete Design Overhaul
+
+## [2025-01-11] - ContactModal Solace Branding & Products Scroll Navigation
+
+### ContactModal Solace Rebrand
+- **Company Focus**: Updated from EMA-specific to comprehensive Solace technology demo request
+- **Title Update**: "EMA Program Başvurusu" → "Solace Demo Talep"
+- **Description Enhancement**: Now mentions both ENSI and EMA products with Solace technology focus
+- **Logo Integration**: Updated to use solace_logo_small.svg for consistent branding
+- **Brand Colors**: All UI elements now use brand-blue instead of generic blue colors
+- **Form Styling**: Input focus states and button colors updated to match Solace brand palette
+
+### Hero Section Navigation Enhancement
+- **Smooth Scrolling**: "Explore Products" button now smoothly scrolls to products section
+- **Product Discovery**: Improved user journey from hero to product showcase
+- **Section Targeting**: Added ID="products" to SolaceProductsSection for scroll navigation
+- **UX Flow**: Users can now seamlessly navigate from hero call-to-action to product details
+
+### Technical Improvements
+- **JavaScript Integration**: Added scrollToProducts function with smooth scroll behavior
+- **Accessibility**: Proper scroll positioning with 'block: start' parameter
+- **User Experience**: Eliminated modal popup for product exploration, creating smoother navigation flow
+- **Brand Consistency**: All modal elements now reflect Solace brand colors and messaging
+
+### User Journey Enhancement
+- **Immediate Product Access**: Users can instantly view ENSI and EMA products from hero section
+- **Unified Branding**: ContactModal now properly represents Solace as the parent company
+- **Better Information Architecture**: Clear distinction between demo request and product exploration
+
+---
+
+## [2025-01-11] - CTA Text & Color Scheme Update to #4caae5
+
+## [2025-01-11] - Middleware Root to Turkish Auto-Redirect
+
+### Routing Enhancement
+- **Root Path Redirect**: Added explicit redirection from "/" to "/tr" in middleware
+- **Turkish-First Experience**: Ensures all root URL visits automatically load Turkish version
+- **Guaranteed Localization**: Bypasses browser language detection for root path requests
+- **User Experience**: Visitors accessing the app via root URL will immediately see Turkish content
+
+### Technical Implementation
+- **Special Case Handler**: Added specific condition in middleware for pathname === '/'
+- **Direct Redirect**: Immediate NextResponse.redirect to '/tr' for root requests
+- **Priority Logic**: Root redirect takes precedence over general locale detection
+- **Consistent Behavior**: Ensures predictable routing regardless of user's browser settings
+
+### Benefits
+- **Default Language Enforcement**: Turkish is now the guaranteed default for all new visitors
+- **Simplified User Journey**: No language ambiguity for users accessing the main URL
+- **SEO Optimization**: Clear default locale for search engine indexing
+- **Brand Consistency**: Aligns with Turkish-first brand positioning
+
+---
+
+## [2025-01-11] - ContactModal Solace Branding & Products Scroll Navigation
+
+## [2025-01-11] - Mobile Hero Section Optimization
+
+### Mobile UX Enhancement
+- **Logo Hidden on Mobile**: Solace logo image now hidden on mobile and tablet devices for cleaner layout
+- **Content Centering**: All hero content (headline, description, buttons) now consistently centered on all screen sizes
+- **Full-Width Content**: Content takes full width on mobile, optimized 7/12 width on large screens
+- **Responsive Grid**: Improved grid layout that adapts seamlessly from mobile to desktop
+
+### Layout Improvements
+- **Mobile-First Design**: Prioritized mobile readability and visual hierarchy
+- **Consistent Text Alignment**: Text now center-aligned across all device sizes
+- **Button Alignment**: CTA buttons properly centered on all screen sizes
+- **Space Optimization**: Removed image on mobile to maximize content visibility
+
+### Technical Changes
+- **Responsive Classes**: Added `hidden lg:flex` to hide logo on mobile
+- **Grid Adjustments**: Updated column spans for optimal responsive behavior
+- **Typography Scaling**: Maintained responsive text sizing while improving mobile layout
+- **Margin Optimization**: Removed left-alignment constraints for consistent centering
+
+### Mobile Experience Benefits
+- **Cleaner Interface**: Reduced visual clutter on smaller screens
+- **Better Focus**: Content is the primary focus without competing visual elements
+- **Improved Readability**: Centered layout provides better reading experience
+- **Faster Loading**: Fewer elements to render on mobile devices
+
+---
+
+## [2025-01-11] - Middleware Root to Turkish Auto-Redirect
+
+## [2025-01-11] - Critical Mobile Viewport Fix
+
+### Mobile Layout Issue Resolution
+- **Root Cause Identified**: Missing viewport meta tag was causing mobile browsers to render desktop layout and scale it down
+- **Viewport Meta Tag Added**: Added `viewport: 'width=device-width, initial-scale=1'` to metadata
+- **Mobile Width Fix**: Mobile browsers will now render at proper device width instead of cramped scaled-down desktop version
+- **Responsive Behavior Restored**: All responsive CSS classes will now work correctly on mobile devices
+
+### Technical Details
+- **Before**: Mobile browsers treated the site as desktop and scaled it down, creating narrow cramped appearance
+- **After**: Native mobile rendering with proper width utilization
+- **Viewport Setting**: `width=device-width, initial-scale=1` ensures 1:1 pixel ratio and device-width rendering
+- **CSS Framework**: All Tailwind responsive classes (sm:, md:, lg:) will now function properly on mobile
+
+### User Experience Impact
+- **Mobile Layout**: Proper full-width mobile experience restored
+- **Touch Targets**: Buttons and interactive elements will be properly sized for mobile
+- **Readability**: Text and content will no longer appear too small or cramped
+- **Performance**: Native mobile rendering instead of scaled desktop improves performance
+
+---
+
+## [2025-01-11] - Mobile Hero Section Optimization
+
+## [2025-01-11] - Complete Mobile Width Constraint Resolution
+
+### Root Cause Analysis & Fixes
+- **Issue**: Multiple components had width constraints causing cramped mobile layout
+- **MainPage.tsx**: Removed `items-center` class that was centering and constraining content
+- **FooterSection.tsx**: Replaced `container` with `w-full max-w-7xl mx-auto` for proper responsive width
+- **Navbar.tsx**: Updated both desktop and mobile menu containers to use proper width classes
+- **globals.css**: Removed restrictive container max-width breakpoints that limited width on tablets/large phones
+
+### Component-by-Component Fixes
+
+#### MainPage.tsx
+- **Before**: `<main className='flex flex-col items-center'>`
+- **After**: `<main className='flex flex-col w-full'>`
+- **Impact**: Content now uses full available width instead of being centered/constrained
+
+#### FooterSection.tsx  
+- **Before**: `<div className='container px-5 md:px-8'>`
+- **After**: `<div className='w-full max-w-7xl mx-auto px-5 md:px-8'>`
+- **Impact**: Footer now responsive across all screen sizes without arbitrary width limits
+
+#### Navbar.tsx (2 instances)
+- **Before**: `<div className='container mx-auto ...'>`
+- **After**: `<div className='w-full max-w-7xl mx-auto ...'>`
+- **Impact**: Navigation properly spans available width on all devices
+
+#### globals.css - Critical Fix
+- **Removed**: Restrictive container max-width rules:
+  - `max-width: 640px` at 640px+ screens (very limiting for tablets)
+  - `max-width: 768px` at 768px+ screens
+  - Similar constraints at larger breakpoints
+- **Kept**: Basic container structure with full width and auto margins
+- **Impact**: Eliminated the primary cause of mobile/tablet width constraints
+
+### Mobile Experience Improvements
+- **Full Width Utilization**: App now uses complete available screen width
+- **Proper Responsive Behavior**: All Tailwind responsive classes work correctly
+- **Tablet Optimization**: Devices between 640px-1024px no longer artificially constrained
+- **Touch-Friendly**: Proper spacing and sizing for mobile interactions
+- **Performance**: Reduced layout recalculations and improved rendering
+
+### Technical Benefits
+- **Future-Proof**: No arbitrary width limits that could cause issues with new devices
+- **Flexible Design System**: Components can properly adapt to any screen size
+- **Consistent Behavior**: All sections now follow the same responsive width pattern
+- **Maintainable Code**: Cleaner, more predictable layout system
+
+---
+
+## [2025-01-11] - Critical Mobile Viewport Fix
+
+## [2025-01-11] - Fixed Automatic Page Width Changes
+
+### Root Cause Analysis
+- **Primary Issue**: `floating-particles` animation on body was causing width fluctuations through rotating transform animations
+- **Secondary Issue**: Missing scrollbar gutter stability causing layout shifts when content length changed
+- **Tertiary Issue**: Excessive resize event triggers causing unnecessary rerenders
+
+### Critical Fixes Applied
+
+#### Body Class Cleanup
+- **Removed**: `floating-particles` class from body that was creating animated pseudo-elements
+- **Removed**: `overscroll-none` that could interfere with scrollbar behavior
+- **Impact**: Eliminated transform animations affecting overall page layout
+
+#### Scrollbar Stability
+- **Added**: `overflow-y: scroll` to always show scrollbar space
+- **Added**: `scrollbar-gutter: stable` to reserve consistent scrollbar space
+- **Impact**: Prevents width changes when content becomes scrollable
+
+#### Box Model Consistency
+- **Added**: Universal `box-sizing: border-box` for all elements
+- **Added**: Consistent box-sizing for pseudo-elements
+- **Impact**: Ensures predictable element sizing calculations
+
+#### Performance Optimization
+- **Added**: Debounced resize event handler (150ms delay)
+- **Prevented**: Excessive mobile detection triggers during window resize
+- **Impact**: Reduces layout recalculations and improves stability
+
+### Technical Details
+
+#### Before (Problematic):
+```css
+.floating-particles::before {
+    /* Animated pseudo-element covering entire body */
+    animation: float-particles 20s linear infinite;
+    transform: translateY(-20px) rotate(360deg); /* Causing width changes */
+}
+```
+
+#### After (Stable):
+```css
+body {
+    overflow-y: scroll;           /* Always reserve scrollbar space */
+    scrollbar-gutter: stable;     /* Prevent width jumps */
+    box-sizing: border-box;       /* Consistent sizing */
+}
+```
+
+#### Resize Event Optimization:
+```javascript
+// Debounced resize handler prevents excessive state updates
+const debouncedResize = () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(checkMobile, 150);
+};
+```
+
+### User Experience Improvements
+- **Stable Layout**: Page width no longer fluctuates during scrolling or animations
+- **Smooth Scrolling**: No layout jumps when scrollbar appears/disappears
+- **Consistent Responsive Behavior**: Mobile detection changes are now smooth and debounced
+- **Better Performance**: Reduced layout recalculations and repaints
+
+### Browser Compatibility
+- **Chrome/Edge**: `scrollbar-gutter` fully supported
+- **Firefox**: `scrollbar-gutter` supported
+- **Safari**: Graceful fallback to `overflow-y: scroll`
+- **Mobile**: Improved stability across all mobile browsers
+
+---
+
+## [2025-01-11] - Complete Mobile Width Constraint Resolution
