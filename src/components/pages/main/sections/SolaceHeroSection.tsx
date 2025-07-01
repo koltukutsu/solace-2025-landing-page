@@ -15,6 +15,16 @@ export default function SolaceHeroSection({ isMobile, setContactModalOpen }: Sol
     const { locale } = useLocale();
     const content = solaceContent.hero;
 
+    const scrollToProducts = () => {
+        const productsSection = document.getElementById('products');
+        if (productsSection) {
+            productsSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    };
+
     return (
         <section className='relative flex min-h-screen items-center justify-center bg-transparent overflow-hidden'>
             {/* Enhanced Background Elements with Brand Colors */}
@@ -26,8 +36,8 @@ export default function SolaceHeroSection({ isMobile, setContactModalOpen }: Sol
 
             <div className='relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20'>
                 <div className='grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center min-h-[70vh]'>
-                    {/* Left Column - Content */}
-                    <div className='lg:col-span-7 text-center lg:text-left'>
+                    {/* Content Column - Full width on mobile, 7/12 on large screens */}
+                    <div className='col-span-1 lg:col-span-7 text-center'>
                         <h1 className='font-serif text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight tracking-tighter dark:text-white'>
                             <span className='block text-brand-blue dark:text-brand-blue'>
                                 {content.headline[locale]}
@@ -37,11 +47,11 @@ export default function SolaceHeroSection({ isMobile, setContactModalOpen }: Sol
                             </span>
                         </h1>
 
-                        <p className='font-sans text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto lg:mx-0 dark:text-gray-300'>
+                        <p className='font-sans text-lg sm:text-xl text-gray-600 mb-10 leading-relaxed max-w-2xl mx-auto dark:text-gray-300'>
                             {content.description[locale]}
                         </p>
 
-                        <div className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'>
+                        <div className='flex flex-col sm:flex-row gap-4 justify-center'>
                             <Button
                                 size='lg'
                                 onClick={() => setContactModalOpen(true)}
@@ -53,7 +63,7 @@ export default function SolaceHeroSection({ isMobile, setContactModalOpen }: Sol
                             <Button
                                 size='lg'
                                 variant='outline'
-                                onClick={() => setContactModalOpen(true)}
+                                onClick={scrollToProducts}
                                 className='border-accent-blue text-accent-blue hover:bg-accent-blue hover:text-white dark:border-accent-blue dark:text-accent-blue dark:hover:bg-accent-blue dark:hover:text-white font-ui transition-all duration-300'>
                                 <Video className='mr-2 h-5 w-5' />
                                 {content.secondaryCTA[locale]}
@@ -62,7 +72,7 @@ export default function SolaceHeroSection({ isMobile, setContactModalOpen }: Sol
                     </div>
 
                     {/* Right Column - Logo */}
-                    <div className='lg:col-span-5 flex justify-center items-center'>
+                    <div className='hidden lg:flex lg:col-span-5 justify-center items-center'>
                         <div className='relative w-72 h-72 lg:w-96 lg:h-96 flex items-center justify-center'>
                             <div className='absolute inset-0 bg-gradient-to-br from-brand-blue/15 to-accent-blue/15 rounded-full blur-2xl animate-pulse' />
                             <div className='absolute inset-4 bg-gradient-to-tr from-brand-blue/10 to-accent-blue/10 rounded-full blur-xl animate-pulse delay-500' />

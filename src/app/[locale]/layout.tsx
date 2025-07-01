@@ -52,6 +52,7 @@ export const metadata: Metadata = {
     description:
         'Solace, akıllı mekanları sezgisel arkadaşlara dönüştürür. ENSI akıllı ev sistemi ve EMA fiziksel mekan AI\'ı ile konuşarak teknoloji kullanın.',
     keywords: 'Solace, ENSI, EMA, akıllı ev, sesli asistan, yapay zeka, konuşma teknolojisi, IoT',
+    viewport: 'width=device-width, initial-scale=1',
     openGraph: {
         images: '/branding/logo_big.png'
     },
@@ -75,7 +76,7 @@ const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
         // ? https://react.dev/reference/react-dom/client/hydrateRoot#suppressing-unavoidable-hydration-mismatch-errors
         <html suppressHydrationWarning lang={locale}>
             <body
-                className={`${cormorant.variable} ${manrope.variable} ${inter.variable} ${geistMono.variable} bg-futuristic-mesh text-foreground overscroll-none antialiased floating-particles`}>
+                className={`${cormorant.variable} ${manrope.variable} ${inter.variable} ${geistMono.variable} bg-futuristic-mesh text-foreground antialiased`}>
                 <ThemeProvider attribute='class'>
                     <LocaleProvider>
                         <Navbar />

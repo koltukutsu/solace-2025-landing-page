@@ -98,13 +98,13 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
         setIsSuccess(false);
     };
 
-    // Decorative bubbles for background - more subtle now
+    // Decorative bubbles for background - with brand colors
     const Bubbles = () => (
         <div className='pointer-events-none absolute inset-0 z-0 overflow-hidden'>
             {[...Array(4)].map((_, i) => (
                 <div
                     key={i}
-                    className='absolute rounded-full bg-blue-300/5 dark:bg-blue-300/5'
+                    className='absolute rounded-full bg-accent-blue/10 dark:bg-accent-blue/15'
                     style={{
                         width: `${Math.random() * 150 + 80}px`,
                         height: `${Math.random() * 150 + 80}px`,
@@ -121,7 +121,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
     // Success animation component
     const SuccessAnimation = () => (
         <motion.div
-            className='absolute inset-0 z-10 flex items-center justify-center bg-blue-500'
+            className='absolute inset-0 z-10 flex items-center justify-center bg-brand-blue'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}>
@@ -174,24 +174,24 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                         <div className='absolute inset-0 -z-10 bg-white dark:bg-slate-950' />
 
                         {/* Logo and header area */}
-                        <div className='relative overflow-hidden rounded-t-2xl bg-blue-500 px-8 pt-12 pb-8'>
+                        <div className='relative overflow-hidden rounded-t-2xl bg-brand-blue px-8 pt-12 pb-8'>
                             <Bubbles />
                             <div className='relative z-1 flex flex-col items-center'>
-                                {/* EMA Logo */}
-                                <div className='mb-6 h-20 w-20 overflow-hidden rounded-2xl bg-white p-2'>
+                                {/* Solace Logo */}
+                                <div className='mb-6 h-20 w-20 overflow-hidden rounded-2xl bg-white p-3'>
                                     <Image
                                         src='/branding/solace_logo_small.svg'
-                                        alt='EMA Logo'
+                                        alt='Solace Logo'
                                         width={80}
                                         height={80}
                                         className='h-full w-full object-contain'
                                     />
                                 </div>
 
-                                <h2 className='mb-2 text-2xl font-bold text-white'>EMA Program Başvurusu</h2>
+                                <h2 className='mb-2 text-2xl font-bold text-white'>Solace Demo Talep</h2>
                                 <p className='max-w-sm text-center text-sm text-blue-100'>
-                                    Mağazanızda EMA kullanmak için bilgilerinizi doldurun. En kısa sürede sizinle
-                                    iletişime geçeceğiz.
+                                    Solace teknolojisini deneyimlemek için bilgilerinizi doldurun.
+                                    ENSI ve EMA ürünlerimiz hakkında detaylı bilgi alın.
                                 </p>
                             </div>
                         </div>
@@ -203,7 +203,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                                     <Label
                                         htmlFor='name'
                                         className='flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300'>
-                                        <User className='h-4 w-4 text-blue-500' />
+                                        <User className='h-4 w-4 text-brand-blue' />
                                         Ad Soyad
                                     </Label>
                                     <Input
@@ -212,14 +212,14 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         disabled={isLoading || isSuccess}
-                                        className='mt-2 rounded-xl border-gray-200 bg-gray-50 py-6 pr-3 pl-3 focus:border-blue-500 focus:ring-blue-500/20 dark:border-slate-800 dark:bg-slate-900'
+                                        className='mt-2 rounded-xl border-gray-200 bg-gray-50 py-6 pr-3 pl-3 focus:border-brand-blue focus:ring-brand-blue/20 dark:border-slate-800 dark:bg-slate-900'
                                     />
                                 </div>
                                 <div>
                                     <Label
                                         htmlFor='email'
                                         className='flex items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300'>
-                                        <Mail className='h-4 w-4 text-blue-500' />
+                                        <Mail className='h-4 w-4 text-brand-blue' />
                                         E-posta
                                     </Label>
                                     <Input
@@ -229,7 +229,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         disabled={isLoading || isSuccess}
-                                        className='mt-2 rounded-xl border-gray-200 bg-gray-50 py-6 pr-3 pl-3 focus:border-blue-500 focus:ring-blue-500/20 dark:border-slate-800 dark:bg-slate-900'
+                                        className='mt-2 rounded-xl border-gray-200 bg-gray-50 py-6 pr-3 pl-3 focus:border-brand-blue focus:ring-brand-blue/20 dark:border-slate-800 dark:bg-slate-900'
                                     />
                                 </div>
                             </div>
@@ -238,7 +238,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                                 <Button
                                     type='submit'
                                     disabled={isLoading || isSuccess}
-                                    className='w-full rounded-full border-0 bg-blue-500 py-6 text-white shadow-md transition-all hover:bg-blue-600 focus:ring-4 focus:ring-blue-500/30'>
+                                    className='w-full rounded-full border-0 bg-brand-blue py-6 text-white shadow-md transition-all hover:bg-brand-blue/90 focus:ring-4 focus:ring-brand-blue/30'>
                                     {isLoading ? (
                                         <>
                                             <Loader2 className='mr-2 h-4 w-4 animate-spin' />
@@ -250,7 +250,7 @@ export function ContactModal({ open, onOpenChange }: ContactModalProps) {
                                             Gönderildi
                                         </>
                                     ) : (
-                                        'Gönder'
+                                        'Demo Talep Et'
                                     )}
                                 </Button>
                             </div>

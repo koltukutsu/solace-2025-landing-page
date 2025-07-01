@@ -24,13 +24,24 @@ export default function MainPage() {
         const checkMobile = () => {
             setIsMobile(window.innerWidth < 768);
         };
+
+        // Debounce resize events to prevent excessive rerenders
+        let timeoutId: NodeJS.Timeout;
+        const debouncedResize = () => {
+            clearTimeout(timeoutId);
+            timeoutId = setTimeout(checkMobile, 150);
+        };
+
         checkMobile();
-        window.addEventListener('resize', checkMobile);
-        return () => window.removeEventListener('resize', checkMobile);
+        window.addEventListener('resize', debouncedResize);
+        return () => {
+            window.removeEventListener('resize', debouncedResize);
+            clearTimeout(timeoutId);
+        };
     }, []);
 
     return (
-        <main className='flex flex-col items-center'>
+        <main className='flex flex-col w-full'>
             <ContactModal open={contactModalOpen} onOpenChange={setContactModalOpen} />
             <SolaceHeroSection isMobile={isMobile} setContactModalOpen={setContactModalOpen} />
             <SolaceProblemSection />

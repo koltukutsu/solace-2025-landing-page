@@ -57,8 +57,8 @@ export const solaceContent: SolaceContent = {
             en: "Technology Doesn't Have to Be Complex"
         },
         subtitle: {
-            tr: 'Günümüzde akıllı teknolojiler çok karmaşık ve kullanıcı dostu değil',
-            en: "Today's smart technologies are often complex and not user-friendly"
+            tr: 'Bugünün akıllı çözümleri çoğunlukla karmaşık ve kullanıcı dostu olmaktan uzak',
+            en: 'Most smart solutions today are complex and far from user-friendly'
         },
         problems: {
             tr: [
@@ -75,8 +75,8 @@ export const solaceContent: SolaceContent = {
             ]
         },
         empathyQuote: {
-            tr: 'Teknoloji konuştuğumu anlayamıyorsa, kimin için var?',
-            en: "If technology can't understand what I'm saying, who is it for?"
+            tr: 'Eğer teknoloji beni anlamıyorsa, kimin için var?',
+            en: "If technology can't understand me, who is it really for?"
         }
     },
 
@@ -86,8 +86,8 @@ export const solaceContent: SolaceContent = {
             en: 'Our Values'
         },
         subtitle: {
-            tr: 'İnsan odaklı, ses destekli, gizlilik saygılı teknoloji geliştiriyoruz',
-            en: 'We develop human-first, voice-powered, privacy-respecting technology'
+            tr: 'İnsan odaklı, ses destekli ve gizliliğe saygılı teknolojiler geliştiriyoruz',
+            en: 'We craft human-first, voice-powered technology that respects privacy'
         },
         values: [
             {
@@ -158,8 +158,8 @@ export const solaceContent: SolaceContent = {
             en: 'Our Products'
         },
         subtitle: {
-            tr: 'İki ana ürünümüzle akıllı mekanları konuşmaya dönüştürüyoruz',
-            en: 'Transforming smart spaces into conversations with our two main products'
+            tr: 'İki ana ürünümüzle mekanları sohbete dönüştürüyoruz',
+            en: 'With our two flagship products we turn spaces into conversation'
         },
         products: [
             {
@@ -230,7 +230,7 @@ export const solaceContent: SolaceContent = {
             }
         ],
         bottomStatement: {
-            tr: 'Her iki ürün de Solace\'ın "konuşma temelli teknoloji" vizyonunu hayata geçiriyor.',
+            tr: 'Her iki ürün de Solace\'ın "konuşma temelli teknoloji" vizyonunu gerçeğe dönüştürüyor.',
             en: 'Both products bring Solace\'s "conversation-based technology" vision to life.'
         }
     },
@@ -241,8 +241,8 @@ export const solaceContent: SolaceContent = {
             en: 'Our Team'
         },
         subtitle: {
-            tr: 'Girişimci ve teknik uzmanlık birleşimi ile global vizyonlu yerel geliştirme',
-            en: 'Entrepreneurial and technical expertise combined with local development and global vision'
+            tr: 'Girişimci ruhumuzu teknik uzmanlıkla birleştiriyor, yerelde geliştirip globale açıyoruz',
+            en: 'We blend entrepreneurial spirit with technical mastery—built locally, scaling globally'
         },
         highlights: [
             {
@@ -268,8 +268,8 @@ export const solaceContent: SolaceContent = {
             }
         ],
         credibilityStatement: {
-            tr: 'Kanıtlanmış geçmişe sahip girişimci ve teknik uzmanlık ile geliştiriyoruz.',
-            en: 'We develop with proven entrepreneurial and technical expertise background.'
+            tr: 'Kanıtlanmış geçmişe sahip girişimci ve teknik ekibiz.',
+            en: 'A proven team combining entrepreneurial drive and technical depth.'
         }
     },
 

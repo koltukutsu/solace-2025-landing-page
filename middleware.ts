@@ -35,6 +35,11 @@ function getLocale(request: NextRequest): string {
 export function middleware(request: NextRequest) {
     const pathname = request.nextUrl.pathname;
 
+    // Special case: always redirect root "/" to "/tr"
+    if (pathname === '/') {
+        return NextResponse.redirect(new URL('/tr', request.url));
+    }
+
     // Check if pathname already includes locale
     const pathnameHasLocale = locales.some((locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`);
 

@@ -26,7 +26,7 @@ const Navbar = () => {
     return (
         <>
             <nav className='fixed top-0 left-0 z-50 w-full border-b border-gray-200/80 bg-glassmorphism backdrop-blur-sm dark:border-gray-800/80'>
-                <div className='container mx-auto flex items-center justify-between px-4 py-3'>
+                <div className='w-full max-w-7xl mx-auto flex items-center justify-between px-4 py-3'>
                     <Link href={`/${locale}`} className='flex items-center'>
                         <Image
                             src='/branding/solace_logo_small.svg'
@@ -60,7 +60,7 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {isMenuOpen && (
-                    <div className='container mx-auto px-4 pb-4 md:hidden'>
+                    <div className='w-full max-w-7xl mx-auto px-4 pb-4 md:hidden'>
                         <div className='flex flex-col space-y-4'>
                             <Button
                                 onClick={() => {

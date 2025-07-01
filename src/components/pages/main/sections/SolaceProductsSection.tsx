@@ -21,7 +21,7 @@ export default function SolaceProductsSection() {
     const staticContent = contentData[locale];
 
     return (
-        <section className='bg-glassmorphism py-20 sm:py-32'>
+        <section id='products' className='bg-glassmorphism py-20 sm:py-32'>
             <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
                 {/* Section Header */}
                 <div className='text-center max-w-3xl mx-auto mb-16 sm:mb-20'>
