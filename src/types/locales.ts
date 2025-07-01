@@ -96,6 +96,17 @@ export interface CtaContent {
     }>;
 }
 
+export interface HowItWorksContent {
+    headline: LocalizedContent;
+    subtitle: LocalizedContent;
+    steps: Array<{
+        icon: string;
+        title: LocalizedContent;
+        description: LocalizedContent;
+    }>;
+    description: LocalizedContent;
+}
+
 export interface FooterContent {
     tagline: LocalizedContent;
     legal: LocalizedContent;
@@ -120,6 +131,7 @@ export interface SolaceContent {
     values: ValuesContent;
     missionVision: MissionVisionContent;
     products: ProductsContent;
+    howItWorks: HowItWorksContent;
     team: TeamContent;
     proof: ProofContent;
     cta: CtaContent;

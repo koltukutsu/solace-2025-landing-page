@@ -1,3 +1,22 @@
+// Import types for use in this file
+import type {
+    CtaContent,
+    FooterContent,
+    HeroContent,
+    Locale,
+    LocalizedArray,
+    LocalizedContent,
+    MissionVisionContent,
+    NavigationContent,
+    ProblemContent,
+    Product,
+    ProductsContent,
+    ProofContent,
+    SolaceContent,
+    TeamContent,
+    ValuesContent
+} from '@/types/locales';
+
 // Export the new locale-based content system
 export { solaceContent } from '@/lib/locales';
 
@@ -20,7 +39,7 @@ export type {
     ProofContent,
     CtaContent,
     FooterContent
-} from '@/types/locales';
+};
 
 export interface ProductInfo {
     name: string;

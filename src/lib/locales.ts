@@ -136,8 +136,8 @@ export const solaceContent: SolaceContent = {
             }
         ],
         empathyLine: {
-            tr: 'Solace ile karmaşıklık konuşmaya dönüşür.',
-            en: 'With Solace, complexity becomes conversation.'
+            tr: 'Solace ile karmaşıklık kaybolur, herşey konuşmanın rahatlığına dönüşür.',
+            en: 'With Solace, complexity disappears—everything becomes the comfort of conversation.'
         }
     },
 
@@ -232,6 +232,56 @@ export const solaceContent: SolaceContent = {
         bottomStatement: {
             tr: 'Her iki ürün de Solace\'ın "konuşma temelli teknoloji" vizyonunu gerçeğe dönüştürüyor.',
             en: 'Both products bring Solace\'s "conversation-based technology" vision to life.'
+        }
+    },
+
+    howItWorks: {
+        headline: {
+            tr: 'Nasıl Çalışır?',
+            en: 'How It Works?'
+        },
+        subtitle: {
+            tr: 'Solace teknolojisini kullanmak çok basit - sadece konuşun',
+            en: 'Using Solace technology is simple - just speak'
+        },
+        steps: [
+            {
+                icon: '🗣️',
+                title: {
+                    tr: 'Konuşun',
+                    en: 'Speak'
+                },
+                description: {
+                    tr: 'Doğal dilinizle konuşarak ihtiyacınızı belirtin',
+                    en: 'Express your needs by speaking in natural language'
+                }
+            },
+            {
+                icon: '🧠',
+                title: {
+                    tr: 'AI Anlıyor',
+                    en: 'AI Understands'
+                },
+                description: {
+                    tr: 'Yapay zeka sistemi bağlamı anlayarak isteğinizi işler',
+                    en: 'AI system processes your request understanding the context'
+                }
+            },
+            {
+                icon: '📱',
+                title: {
+                    tr: 'Aksiyon Alınır',
+                    en: 'Action Taken'
+                },
+                description: {
+                    tr: 'Bağlı cihazlar otomatik olarak uygun aksiyonu gerçekleştirir',
+                    en: 'Connected devices automatically perform the appropriate action'
+                }
+            }
+        ],
+        description: {
+            tr: 'Solace ile karmaşık teknoloji basit konuşmaya dönüşür',
+            en: 'With Solace, complex technology becomes simple conversation'
         }
     },
 
