@@ -17,7 +17,6 @@ import EmaProductSection from './sections/EmaProductSection';
 import SolaceBusinessModelSection from './sections/SolaceBusinessModelSection';
 import SolaceCtaSection from './sections/SolaceCtaSection';
 import FooterSection from './sections/FooterSection';
-import SolaceProblemSection from './sections/SolaceProblemSection';
 
 export default function MainPage() {
     const [contactModalOpen, setContactModalOpen] = useState(false);
