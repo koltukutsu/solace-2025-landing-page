@@ -7,7 +7,7 @@ interface RootLayoutProps {
 
 const RootLayout = ({ children }: RootLayoutProps) => {
     return (
-        <html lang="tr">
+        <html>
             <body>{children}</body>
         </html>
     );

@@ -78,7 +78,7 @@ const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
         // ? https://react.dev/reference/react-dom/client/hydrateRoot#suppressing-unavoidable-hydration-mismatch-errors
         <html suppressHydrationWarning lang={locale}>
             <body
-                className={`${cormorant.variable} ${manrope.variable} ${inter.variable} ${geistMono.variable} bg-futuristic-mesh text-foreground antialiased`}>
+                className={`${cormorant.variable} ${manrope.variable} ${inter.variable} ${geistMono.variable} bg-futuristic-mesh text-foreground antialiased overflow-x-hidden`}>
                 <ThemeProvider attribute='class'>
                     <LocaleProvider>
                         <Navbar />

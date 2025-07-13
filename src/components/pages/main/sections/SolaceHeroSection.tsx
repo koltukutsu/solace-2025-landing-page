@@ -10,7 +10,7 @@ export default function SolaceHeroSection() {
     const content = solaceContent.hero;
 
     return (
-        <section className='relative flex h-screen items-center justify-center bg-[#01081a] text-white'>
+        <section className='relative flex h-screen items-center justify-center bg-[#010413] text-white'>
             {/* Main container for image and text */}
             <div className='relative w-full flex justify-center items-center'>
                 {/* Image for mobile and desktop */}

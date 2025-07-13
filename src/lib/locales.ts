@@ -30,8 +30,8 @@ export const solaceContent: SolaceContent = {
 
     hero: {
         headline: {
-            tr: 'Teknolojiyi Konuşma Kolaylığında Sunuyoruz',
-            en: 'We Offer Technology with the Ease of Conversation'
+            tr: 'Konuşma Kolaylığında Teknoloji',
+            en: 'Technology as Easy as Speaking'
         },
         subheadline: {
             tr: 'Solace: Çok dilli, yapay zekâ odaklı ses teknolojilerinin öncüsü.',
