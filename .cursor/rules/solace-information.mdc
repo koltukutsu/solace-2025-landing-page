@@ -1,149 +1,75 @@
----
-description:
-globs:
-alwaysApply: false
----
 # ✨ **SOLACE: Company Information & Core Values**
 
 **Company Tagline:**
-> Teknolojiyi konuşma kolaylığında sunuyoruz.
-> Technology, at the ease of natural conversation.
 
-# SOLACE - AI-Powered Voice Solutions for Smart Spaces
+> Teknolojiyi Konuşma Kolaylığında Sunuyoruz.
+> We Offer Technology with the Ease of Conversation.
+
+# SOLACE - AI-Powered Voice Solutions for Digital Touchpoints
 
 ## 🎯 **Core Value Proposition**
-Solace creates AI-powered systems that turn smart spaces into intuitive companions. No apps, no confusion. Just talk.
+
+Solace: The pioneer of multilingual, AI-driven voice technologies. Solace leaves complex interfaces behind, moving corporate digital touchpoints to natural conversation with its AI-powered voice infrastructures. Users ask and get answers instead of clicking, while brands gain multilingual interaction and instant data feedback.
 
 ## 🚀 **Company Mission & Vision**
 
 ### Mission
-**TR:** Teknolojiyi, ses temelli ve sezgisel etkileşimlerle insanlaştırmak.
-**EN:** To humanize technology through voice-based, intuitive interactions.
 
-### Vision  
-**TR:** İnsanların teknolojiyle, birbiriyle konuşur gibi iletişim kurduğu bir dünya.
-**EN:** A world where people interact with technology as naturally as they speak to each other.
+**TR:** Ses temelli, sezgisel etkileşimlerle teknolojiyi insanlaştırmak.
+**EN:** To humanize technology with voice-based, intuitive interactions.
 
-## 🏗️ **Our Approach & Values**
+### Vision
 
-### Human-first. Voice-powered. Privacy-respecting.
+**TR:** Kurumların, kullanıcılarıyla konuşur gibi iletişim kurduğu çok dilli dijital ekosistemler inşa etmek.
+**EN:** To build multilingual digital ecosystems where institutions communicate with their users as if they were talking.
+
+## 🏗️ **Our Values**
+
+**Human-Centricity. Voice Priority. Privacy & Security. Insight-Driven Design.**
 
 **Core Principles:**
-- **Bağlamı anlayan doğal konuşma sistemi** - Context-aware, natural voice interaction
-- **Hibrit altyapı (yerel + bulut)** - Hybrid architecture (local + cloud), privacy by design  
-- **Sade, modern tasarım** - Elegant, minimal design across hardware and software
-- **Protokol uyumluluğu** - Interoperability with KNX, Matter, Zigbee, etc.
 
-## 📦 **Product Portfolio**
+- **İnsan Odaklılık:** Çözümlerimiz, insan davranışını temel alır; teknoloji uyum sağlar.
+- **Ses Önceliği:** Konuşma, en doğal etkileşim katmanıdır; platformumuz bunun üzerine kurulur.
+- **Gizlilik & Güvenlik:** Hibrit mimari ve veri sahibi kurum ilkesiyle tasarlanır.
+- **İçgörü Odaklı Tasarım:** Diyalog analitiği, stratejik kararları besleyen net veriler sunar.
 
-### ENSI – Smart Home System
-**TR:** Sizi anlayan ev. Yerel işlemcili bir hub ve bağlamsal sesli asistan.
-**EN:** Your home, now listening. A context-aware AI assistant powered by a local hub.
+## 📦 **Technology Platform**
 
-**Key Features:**
-- Context-aware voice assistant
-- Local processing hub
-- Multi-protocol compatibility (KNX, Matter, Zigbee)
-- Privacy-first architecture
-- Natural conversation interface
+### Conversational Artificial Intelligence Infrastructure
 
-**Target:** Residential smart home users, tech-savvy homeowners
-
----
-
-### EMA – AI for Physical Spaces  
-**TR:** Mağaza içinde konuşarak ürün bulma, bilgi alma—dokunmadan, zahmetsizce.
-**EN:** Conversational assistant that helps customers find products and information—just by talking.
-
-**Key Features:**
-- Multilingual conversation (5 languages)
-- Product discovery through voice
-- Real-time inventory integration
-- Accessibility-focused design
-- Customer analytics and insights
-
-**Target:** Retail stores, shopping centers, public spaces
-
-## 🔧 **How It Works**
-
-### Simple Voice Interaction Flow
-1. **Wake Word Activation** - "Hey Solace" or custom wake word
-2. **AI Intent Processing** - Natural language understanding and context analysis
-3. **Connected Device Response** - Smart devices execute commands appropriately
-
-### Technical Architecture
-- **Hybrid Processing**: Local + cloud for optimal performance and privacy
-- **Multi-Protocol Support**: Works with existing smart home/building systems
-- **Voice-First Design**: Optimized for natural conversation, not commands
-- **Privacy by Design**: Local processing where possible, encrypted cloud when needed
-
-## 📊 **Market Traction & Proof**
-
-### Real-World Deployment
-- **5 pilot installations** across Turkey
-- **Distributor partnerships** established
-- **In-house hardware development** (hubs and voice modules)
-- **Protocol compatibility** with major standards
-
-### Target Markets
-- **Residential**: Smart homes and apartments
-- **Commercial**: Retail stores, offices, hotels
-- **Public Spaces**: Shopping centers, airports, hospitals
-
-## 👥 **Team Expertise**
-
-### Founding Team Background
-- **Entrepreneurial + Technical Expertise**: Proven track record in both business and engineering
-- **Specialized Knowledge**: AI, hardware design, product development, B2B sales
-- **Local Development, Global Vision**: Built in Turkey, scaling internationally
-
-### Core Competencies
-- Artificial Intelligence & Machine Learning
-- Voice User Interface (VUI) Design
-- Hardware & IoT Development
-- B2B Product Strategy
-- Multi-language NLP Systems
+- **LLM + RAG core:** Fact-based answers powered by company-specific data.
+- **Multilingual engine:** Including Turkish, English, Arabic, French, Russian.
+- **API & SDK:** Fast integration, customizable model training.
+- **Dialogue Analytics:** Revenue-enhancing insights, customer intent maps.
 
 ## 🎯 **Business Model**
 
-### Revenue Streams
-- **Hardware Sales**: Hubs, voice modules, accessories
-- **Software Licensing**: AI voice platform licensing
-- **Integration Services**: Custom integration and setup
-- **Ongoing Support**: Maintenance and feature updates
+### Sustainable and Scalable Business Partnerships
 
-### Partnership Strategy
-- **Technology Partners**: Integration with existing smart home/building platforms
-- **Distribution Partners**: Local and international reseller network
-- **Developer Partners**: Third-party integrations and extensions
-
-## 🌍 **Global Vision**
-
-### Expansion Strategy
-- **Phase 1**: Establish strong presence in Turkish market
-- **Phase 2**: Expand to neighboring regions (Middle East, Eastern Europe)
-- **Phase 3**: Enter major global markets (EU, North America)
-
-### Localization Approach
-- Multi-language support from day one
-- Cultural adaptation of voice interfaces
-- Local partnership development
-- Region-specific compliance and privacy standards
+- **Usage-based licensing**
+- **OEM & integrator collaborations:** Rapid expansion to corporate customers.
+- **Data panel & management interface:** Insight, content update, and model optimization in one center.
 
 ## 📞 **Contact & Next Steps**
 
 ### Get Involved
-- **Explore Solutions**: Learn about Ensi and EMA
+
 - **Request Demo**: See our technology in action
-- **Become Partner**: Join our ecosystem
 - **Contact Team**: Discuss custom solutions
+- **About Us**: Learn more about our mission
 
 ### Contact Information
+
 - **Website**: solace.com.tr
-- **Email**: info@solace.com.tr  
+- **Email**: info@solace.com.tr
 - **Phone**: +90 212 000 00 00
 - **Social**: LinkedIn | Instagram | YouTube
 
 ---
 
-*Solace replaces complexity with conversation.*
+_Solace replaces complexity with conversation._
+
+---
+
+_Solace replaces complexity with conversation._

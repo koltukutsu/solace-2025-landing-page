@@ -16,17 +16,17 @@ export default function SolaceValuesSection() {
     const content = solaceContent.values;
 
     return (
-        <section className='bg-transparent py-20 sm:py-32'>
+        <section className='min-h-screen flex items-center justify-center bg-white py-20 sm:py-32'>
             <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
                 {/* Section Header */}
                 <div className='text-center max-w-4xl mx-auto mb-16 sm:mb-20'>
-                    <h2 className='font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 tracking-tight dark:text-white'>
+                    <h2 className='font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-[#2f318b] mb-4 tracking-tight'>
                         {content.headline[locale]}
                     </h2>
-                    <p className='font-sans text-lg sm:text-xl text-gray-600 leading-relaxed dark:text-gray-300'>
+                    <p className='font-sans text-lg sm:text-xl text-gray-600 leading-relaxed'>
                         {content.subtitle[locale]}
                     </p>
-                    <div className='mt-6 w-20 h-1.5 bg-gradient-to-r from-brand-blue to-accent-blue mx-auto rounded-full' />
+                    <div className='mt-6 w-20 h-1.5 bg-gradient-to-r from-[#4da9e7] to-[#2f318b] mx-auto rounded-full' />
                 </div>
 
                 {/* Values Grid */}
@@ -34,29 +34,20 @@ export default function SolaceValuesSection() {
                     {content.values.map(value => (
                         <div key={value.title.tr} className='group text-center p-6'>
                             <div className='flex justify-center mb-6'>
-                                <div className='flex h-20 w-20 items-center justify-center rounded-2xl bg-accent-blue/10 text-brand-blue transition-all duration-300 group-hover:bg-brand-blue group-hover:text-white group-hover:scale-110'>
+                                <div className='flex h-20 w-20 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-100 to-sky-100 text-[#2f318b] transition-all duration-300 group-hover:bg-[#2f318b] group-hover:text-white group-hover:scale-110'>
                                     {iconMap[value.icon]}
                                 </div>
                             </div>
-                            <h3 className='font-ui text-xl font-bold text-gray-900 mb-2 dark:text-white'>
+                            <h3 className='font-ui text-xl font-bold text-gray-900 mb-2'>
                                 {value.title[locale]}
                             </h3>
-                            <p className='font-sans text-gray-600 leading-relaxed dark:text-gray-400'>
+                            <p className='font-sans text-gray-600 leading-relaxed'>
                                 {value.description[locale]}
                             </p>
                         </div>
                     ))}
                 </div>
-
-                {/* Empathy Line */}
-                <div className='text-center max-w-3xl mx-auto'>
-                    <div className='relative rounded-2xl bg-glassmorphism-card p-8'>
-                        <p className='font-serif text-xl md:text-2xl font-medium text-gray-800 leading-relaxed dark:text-gray-200'>
-                            "{content.empathyLine[locale]}"
-                        </p>
-                    </div>
-                </div>
             </div>
         </section>
     );
-} 
+}

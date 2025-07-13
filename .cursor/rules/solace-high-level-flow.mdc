@@ -1,9 +1,3 @@
----
-description:
-globs:
-alwaysApply: false
----
-
 Absolutely. Below is your **updated and complete Solace landing page content flow**—structured, sleek, and bilingual (🇺🇸 English / 🇹🇷 Turkish). It follows the natural storytelling logic: awareness → understanding → trust → conversion.
 
 ---
@@ -19,112 +13,72 @@ _Sleek | Minimal | Conversational | B2B & Visionary_
 ### 🇺🇸 ENGLISH
 
 **Headline:**
-**Technology, at the ease of natural conversation.**
+**We Offer Technology with the Ease of Conversation.**
 **Subheadline:**
-Solace creates AI-powered systems that turn smart spaces into intuitive companions. No apps, no confusion. Just talk.
+Solace: The pioneer of multilingual, AI-driven voice technologies. Solace leaves complex interfaces behind, moving corporate digital touchpoints to natural conversation with its AI-powered voice infrastructures. Users ask and get answers instead of clicking, while brands gain multilingual interaction and instant data feedback.
 **CTA Buttons:**
-\[Explore Solace] \[Request a Demo]
+\[Request a Demo] \[About Us]
 
 ### 🇹🇷 TÜRKÇE
 
 **Başlık:**
-**Teknolojiyi konuşma kolaylığında sunuyoruz.**
+**Teknolojiyi Konuşma Kolaylığında Sunuyoruz.**
 **Alt Başlık:**
-Solace, yapay zekâyla çalışan sistemleri konuşma temelli sezgisel yardımcılar haline getirir. Uygulama yok, karmaşa yok. Sadece konuşun.
+Solace: Çok dilli, yapay zekâ odaklı ses teknolojilerinin öncüsü. Solace, karmaşık arayüzleri geride bırakır; yapay zekâ destekli ses altyapılarıyla kurumların dijital temas noktalarını doğal konuşmaya taşır. Kullanıcılar tıklamak yerine sorup yanıt alır, markalar ise çok dilli etkileşim ve anlık veri geri bildirimi kazanır.
 **Butonlar:**
-\[Solace’ı Keşfet] \[Demo Talep Et]
+\[Demo Talep Et] \[Hakkımızda]
 
 ---
 
-## 🟧 2. Problem Section – Why Solace Exists
+## 🟧 2. Problem Section – Why is the Digital Experience Still Difficult?
 
 ### 🇺🇸 ENGLISH
 
-#### 🔹 General Tech & AI Problems
+**Headline:**
+**Why is the Digital Experience Still Difficult?**
+**Body:**
+Visitors switch to a competitor in seconds if they can't find what they're looking for; multi-layered applications and language barriers slow down the process.
 
-- Too much jargon, too little human insight
-- Voice assistants are shallow and robotic
-- Interfaces are fragmented and frustrating
-- Natural conversation is missing
-- Privacy is often ignored
+- Comprehensive menus, cluttered screen flow
+- Inconsistent user experience in different languages
+- Difficulty in access for users who are distant from technology or of advanced age
+- Information silos and systems that do not communicate with each other
 
-> Solace replaces complexity with conversation.
-
-#### 🔸 Problems Solved by Ensi
-
-- Each device has its own app—creates chaos
-- You rely on wall panels—limited access
-- Systems don't learn or adapt
-- You must learn the system, not the other way around
-- Cloud-only systems fail offline
-
-> Ensi transforms your home into a contextual, voice-driven space.
-
-#### 🔸 Problems Solved by EMA
-
-- Kiosks are clunky and inaccessible
-- No support for multiple languages
-- Elderly and disabled users are often excluded
-- Most assistants don’t actually converse
-- No personalization or learning
-
-> EMA brings natural, multilingual conversation to every physical space.
+> "Remove All Barriers to Your Customer's Purchase"
 
 ---
 
 ### 🇹🇷 TÜRKÇE
 
-#### 🔹 Genel Teknoloji ve Yapay Zekâ Problemleri
+**Başlık:**
+**Dijital Deneyim Neden Hâlâ Zor?**
+**Metin:**
+Ziyaretçiler aradıklarını bulamazsa saniyeler içinde rakibe geçiyor; çok katmanlı uygulamalar ve dil bariyerleri süreci yavaşlatıyor.
 
-- Aşırı teknik, insandan uzak
-- Sesli asistanlar yüzeysel ve tepkisel
-- Arayüzler parçalı ve yorucu
-- Gerçek konuşma deneyimi yok
-- Veriler genellikle dışarıya çıkar, gizlilik zayıf
+- Kapsamlı menüler, dağınık ekran akışı
+- Farklı dillerde tutarsız kullanıcı deneyimi
+- Teknolojiye mesafeli veya ileri yaş kullanıcılar için erişimde güçlük
+- Birbiriyle konuşmayan bilgi siloları ve sistemler
 
-> Solace, karmaşıklığı konuşmayla değiştirir.
-
-#### 🔸 Ensi’nin Çözdüğü Problemler
-
-- Her cihazın ayrı uygulaması var—kafa karışıklığı
-- Duvar panellerine mahkûm olmak—özgürlük kısıtlı
-- Sistem sizi tanımıyor, öğrenmiyor
-- Sistemi siz öğreniyorsunuz, o sizi değil
-- İnternete bağlı olmayan ortamda çalışmıyor
-
-> Ensi, evinizi sesle kontrol edilebilen sezgisel bir ortama dönüştürür.
-
-#### 🔸 EMA’nın Çözdüğü Problemler
-
-- Kiosk ekranları kullanıcı dostu değil
-- Tek dilli sistemler yabancıları dışlıyor
-- Yaşlı, çocuk, engelli bireyler sistemin dışında kalıyor
-- Menü oynatır, konuşmaz—yapay değil, plastik
-- Kişiselleştirme yok, herkes için aynı deneyim
-
-> EMA, her fiziksel mekânda doğal ve çok dilli bir konuşma deneyimi sunar.
+> “Müşterinizin Satın Alması Önündeki Tüm Engelleri Kaldırın”
 
 ---
 
-## 🟧 3. Our Values & Approach
+## 🟧 3. Our Values
 
 ### 🇺🇸 ENGLISH
 
-**Human-first. Voice-powered. Privacy-respecting.**
-
-- Context-aware, natural voice interaction
-- Hybrid architecture (local + cloud), privacy by design
-- Elegant, minimal design across hardware and software
-- Interoperability with KNX, Matter, Zigbee, etc.
+**Human-Centricity:** Our solutions are based on human behavior; technology adapts.
+**Voice Priority:** Conversation is the most natural layer of interaction; our platform is built on it.
+**Privacy & Security:** Designed with a hybrid architecture and the principle of the data owner institution.
+**Insight-Driven Design:** Dialogue analytics provides clear data that feeds strategic decisions.
 
 ### 🇹🇷 TÜRKÇE
 
-**İnsanı merkeze alan. Sesle çalışan. Gizliliğe saygılı.**
-
-- Bağlamı anlayan doğal konuşma sistemi
-- Yerel + bulut hibrit altyapı, veriler evde kalır
-- Donanım ve yazılımda sade, modern tasarım
-- KNX, Matter, Zigbee gibi protokollerle uyumlu
+**İnsan Odaklılık:** Çözümlerimiz, insan davranışını temel alır; teknoloji uyum sağlar.
+**Ses Önceliği:** Konuşma, en doğal etkileşim katmanıdır; platformumuz bunun üzerine kurulur.
+**Gizlilik & Güvenlik:** Hibrit mimari ve veri sahibi kurum ilkesiyle tasarlanır.
+**İçgörü Odaklı Tasarım:** Diyalog analitiği, stratejik kararları besleyen net veriler sunar.
 
 ---
 
@@ -133,124 +87,76 @@ Solace, yapay zekâyla çalışan sistemleri konuşma temelli sezgisel yardımc�
 ### 🇺🇸 ENGLISH
 
 **Mission:**
-To humanize technology through voice-based, intuitive interactions.
+To humanize technology with voice-based, intuitive interactions.
 **Vision:**
-A world where people interact with technology as naturally as they speak to each other.
+To build multilingual digital ecosystems where institutions communicate with their users as if they were talking.
 
 ### 🇹🇷 TÜRKÇE
 
 **Misyon:**
-Teknolojiyi, ses temelli ve sezgisel etkileşimlerle insanlaştırmak.
+Ses temelli, sezgisel etkileşimlerle teknolojiyi insanlaştırmak.
 **Vizyon:**
-İnsanların teknolojiyle, birbiriyle konuşur gibi iletişim kurduğu bir dünya.
+Kurumların, kullanıcılarıyla konuşur gibi iletişim kurduğu çok dilli dijital ekosistemler inşa etmek.
 
 ---
 
-## 🟧 5. Our Products
+## 🟧 5. Technology Platform
 
 ### 🇺🇸 ENGLISH
 
-**Ensi – Smart Home System**
-Your home, now listening. A context-aware AI assistant powered by a local hub.
+**Conversational Artificial Intelligence Infrastructure**
 
-**EMA – AI for Physical Spaces**
-Conversational assistant that helps customers find products and information—just by talking.
-
-\[Visit Ensi → ensi.solace.com.tr]
-\[Visit EMA → ema.solace.com.tr]
+- **LLM + RAG core:** Fact-based answers powered by company-specific data.
+- **Multilingual engine:** Including Turkish, English, Arabic, French, Russian.
+- **API & SDK:** Fast integration, customizable model training.
+- **Dialogue Analytics:** Revenue-enhancing insights, customer intent maps.
 
 ### 🇹🇷 TÜRKÇE
 
-**Ensi – Akıllı Yaşam Sistemi**
-Sizi anlayan ev. Yerel işlemcili bir hub ve bağlamsal sesli asistan.
+**Konuşmaya Dayalı Yapay Zekâ Altyapısı**
 
-**EMA – Fiziksel Alanlar için Yapay Zekâ**
-Mağaza içinde konuşarak ürün bulma, bilgi alma—dokunmadan, zahmetsizce.
-
-\[Ensi’yi Ziyaret Et → ensi.solace.com.tr]
-\[EMA’yı Ziyaret Et → ema.solace.com.tr]
+- **LLM + RAG çekirdeği:** Şirkete özgü veriyle güçlenen, gerçeğe dayalı yanıtlar.
+- **Çok dilli motor:** Türkçe, İngilizce, Arapça, Fransızca, Rusça dâhil.
+- **API & SDK:** Hızlı entegrasyon, özelleştirilebilir model eğitimi.
+- **Diyalog Analitiği:** Gelir artırıcı içgörüler, müşteri niyet haritaları.
 
 ---
 
-## 🟧 6. How It Works
+## 🟧 6. Business Model & Ecosystem
 
 ### 🇺🇸 ENGLISH
 
-**Talk. The system understands and acts.**
+**Sustainable and Scalable Business Partnerships**
 
-- Wake word activates assistant
-- AI processes your intent and context
-- Connected devices respond accordingly
-
-Include animation of user speaking → system responding.
+- **Usage-based licensing**
+- **OEM & integrator collaborations:** Rapid expansion to corporate customers.
+- **Data panel & management interface:** Insight, content update, and model optimization in one center.
 
 ### 🇹🇷 TÜRKÇE
 
-**Söyleyin. Sistem anlar ve harekete geçer.**
+**Sürdürülebilir ve Ölçeklenebilir İş Ortaklıkları**
 
-- Wake word ile asistan devreye girer
-- AI bağlamı ve niyeti çözümler
-- Bağlı cihazlar komutu yerine getirir
-
-Kullanıcı → konuşma → sistem → aksiyon animasyonu eklenebilir.
+- **Kullanım-bazlı lisanslama**
+- **OEM & entegratör iş birlikleri:** Kurumsal müşterilere hızlı yayılım.
+- **Veri paneli & yönetim arayüzü:** İçgörü, içerik güncelleme ve model optimizasyonu tek merkezde.
 
 ---
 
-## 🟧 7. Proof & Traction
+## 🟧 7. Call to Action
 
 ### 🇺🇸 ENGLISH
 
-**Already running in the real world.**
+**Let's Talk About the Future with Solace**
+Get in touch today and add the power of natural conversation to your digital experiences.
 
-- 5 pilot installations in Turkey
-- Distributor partnership secured
-- Hub and voice modules built in-house
-- Compatible with major protocols
-
-### 🇹🇷 TÜRKÇE
-
-**Gerçek dünyada çalışıyor.**
-
-- Türkiye'de 5 pilot kurulum
-- Distribütör ağı kuruldu
-- Hub ve sesli modüller yerli üretim
-- Tüm yaygın protokollerle uyumlu
-
----
-
-## 🟧 8. Our Team
-
-### 🇺🇸 ENGLISH
-
-Introduce your founding team briefly:
-
-- Entrepreneurial + technical backgrounds
-- AI, hardware, product & B2B expertise
-- Based in Turkey, building for the world
-
-### 🇹🇷 TÜRKÇE
-
-Kurucu ekibinizi tanıtın:
-
-- Girişimcilik ve mühendislik geçmişi
-- Yapay zekâ, donanım, ürün ve B2B deneyimi
-- Türkiye’de geliştirildi, dünyaya açılıyor
-
----
-
-## 🟧 9. Call to Action
-
-### 🇺🇸 ENGLISH
-
-**Let’s bring voice to your technology.**
-
-- \[Book a Demo]
-- \[Become a Partner]
 - \[Contact Us]
 
 ### 🇹🇷 TÜRKÇE
 
-**Teknolojinize ses getirelim.**
+**Solace ile Geleceği Konuşun**
+Bugün iletişime geçin, doğal konuşmanın gücünü dijital deneyimlerinize ekleyin.
+
+- \[İletişime Geçin]
 
 - \[Demo Talep Et]
 - \[İş Ortağı Olun]

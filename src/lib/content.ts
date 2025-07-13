@@ -9,11 +9,7 @@ import type {
     MissionVisionContent,
     NavigationContent,
     ProblemContent,
-    Product,
-    ProductsContent,
-    ProofContent,
     SolaceContent,
-    TeamContent,
     ValuesContent
 } from '@/types/locales';
 
@@ -28,15 +24,11 @@ export type {
     LocalizedContent,
     LocalizedArray,
     SolaceContent,
-    Product,
     NavigationContent,
     HeroContent,
     ProblemContent,
     ValuesContent,
     MissionVisionContent,
-    ProductsContent,
-    TeamContent,
-    ProofContent,
     CtaContent,
     FooterContent
 };

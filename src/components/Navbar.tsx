@@ -19,9 +19,14 @@ import { solaceContent } from '@/lib/locales';
 const Navbar = () => {
     const [contactModalOpen, setContactModalOpen] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const { locale, toggleLocale } = useLocale();
+    const { locale, setLocale } = useLocale();
 
     const navContent = solaceContent.navigation;
+
+    const handleLocaleChange = (newLocale: 'tr' | 'en') => {
+        setLocale(newLocale);
+        setIsMenuOpen(false);
+    };
 
     return (
         <>
@@ -40,14 +45,31 @@ const Navbar = () => {
                     {/* Desktop Menu */}
                     <div className='hidden items-center space-x-4 md:flex'>
                         <Button
+                            size='lg'
+                            className='bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg px-8 py-4 transition-transform hover:scale-105 shadow-lg shadow-blue-400/20 backdrop-blur-md'
                             onClick={() => setContactModalOpen(true)}
-                            className='bg-brand-blue text-white hover:bg-brand-blue/90 dark:bg-accent-blue dark:text-white dark:hover:bg-accent-blue/90'>
+                        >
                             {navContent.contact[locale]}
                         </Button>
-                        <Button variant='ghost' size='icon' onClick={toggleLocale} aria-label='Change language'>
-                            <Languages className='h-5 w-5' />
-                            <span className='ml-2 font-semibold'>{locale.toUpperCase()}</span>
-                        </Button>
+                        <DropdownMenu>
+                            <DropdownMenuTrigger asChild>
+                                <Button
+                                    variant='outline'
+                                    size='icon'
+                                    aria-label='Change language'
+                                    className='bg-white hover:bg-gray-100 dark:bg-transparent'>
+                                    <Languages className='h-5 w-5' />
+                                </Button>
+                            </DropdownMenuTrigger>
+                            <DropdownMenuContent>
+                                <DropdownMenuItem onSelect={() => handleLocaleChange('en')}>
+                                    English
+                                </DropdownMenuItem>
+                                <DropdownMenuItem onSelect={() => handleLocaleChange('tr')}>
+                                    Türkçe
+                                </DropdownMenuItem>
+                            </DropdownMenuContent>
+                        </DropdownMenu>
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -70,16 +92,24 @@ const Navbar = () => {
                                 className='w-full bg-brand-blue text-white hover:bg-brand-blue/90 dark:bg-accent-blue dark:text-white dark:hover:bg-accent-blue/90'>
                                 {navContent.contact[locale]}
                             </Button>
-                            <Button
-                                variant='outline'
-                                className='w-full'
-                                onClick={() => {
-                                    toggleLocale();
-                                    setIsMenuOpen(false);
-                                }}>
-                                <Languages className='mr-2 h-5 w-5' />
-                                {locale === 'tr' ? 'English' : 'Türkçe'}
-                            </Button>
+                            <DropdownMenu>
+                                <DropdownMenuTrigger asChild>
+                                    <Button
+                                        variant='outline'
+                                        className='w-full bg-white hover:bg-gray-100 dark:bg-transparent'>
+                                        <Languages className='mr-2 h-5 w-5' />
+                                        <span>{locale === 'tr' ? 'Dil Değiştir' : 'Change Language'}</span>
+                                    </Button>
+                                </DropdownMenuTrigger>
+                                <DropdownMenuContent className='w-[calc(100vw-2rem)]'>
+                                    <DropdownMenuItem onSelect={() => handleLocaleChange('en')}>
+                                        English
+                                    </DropdownMenuItem>
+                                    <DropdownMenuItem onSelect={() => handleLocaleChange('tr')}>
+                                        Türkçe
+                                    </DropdownMenuItem>
+                                </DropdownMenuContent>
+                            </DropdownMenu>
                         </div>
                     </div>
                 )}

@@ -1,216 +1,122 @@
----
-description:
-globs:
-alwaysApply: false
----
-# SOLACE Landing Page "Complete Content Flow"  
-*(Company-wide approach showcasing both Ensi and EMA products)*
+# SOLACE Landing Page "Complete Content Flow"
+
+_(Company-wide approach for a unified brand message)_
 
 ---
 
-## 1. HERO — "Technology, at the ease of natural conversation"
+## 1. HERO — "Teknolojiyi Konuşma Kolaylığında Sunuyoruz"
 
-| Sol (Metin) | Sağ (Görsel) |
-|----|-----|
-| **Tagline TR:** **"Teknolojiyi konuşma kolaylığında sunuyoruz."** | Solace logosu + konuşma dalgaları |
-| **Tagline EN:** **"Technology, at the ease of natural conversation."** |  |
+| Sol (Metin)                                                               | Sağ (Görsel)                      |
+| ------------------------------------------------------------------------- | --------------------------------- |
+| **Headline TR:** **"Teknolojiyi Konuşma Kolaylığında Sunuyoruz."**        | Solace logosu + konuşma dalgaları |
+| **Headline EN:** **"We Offer Technology with the Ease of Conversation."** |                                   |
 
-**Alt Başlık TR**  
-Solace, yapay zekâyla çalışan sistemleri konuşma temelli sezgisel yardımcılar haline getirir. Uygulama yok, karmaşa yok. Sadece konuşun.
+**Sub-headline TR**
+Solace: Çok dilli, yapay zekâ odaklı ses teknolojilerinin öncüsü. Solace, karmaşık arayüzleri geride bırakır; yapay zekâ destekli ses altyapılarıyla kurumların dijital temas noktalarını doğal konuşmaya taşır. Kullanıcılar tıklamak yerine sorup yanıt alır, markalar ise çok dilli etkileşim ve anlık veri geri bildirimi kazanır.
 
-**Alt Başlık EN**  
-Solace creates AI-powered systems that turn smart spaces into intuitive companions. No apps, no confusion. Just talk.
+**Sub-headline EN**
+Solace: The pioneer of multilingual, AI-driven voice technologies. Solace leaves complex interfaces behind, moving corporate digital touchpoints to natural conversation with its AI-powered voice infrastructures. Users ask and get answers instead of clicking, while brands gain multilingual interaction and instant data feedback.
 
-**CTA Butonlar**  
-- Solace'ı Keşfet / Explore Solace (Ana)  
-- Demo Talep Et / Request a Demo (Demo)
+**CTA Buttons**
 
----
-
-## 2. PROBLEM — "Neden Solace Var?"
-
-**Başlık TR**  
-Teknoloji karmaşık, insanlar basitlik istiyor.
-
-**Başlık EN**  
-Technology is complex, people want simplicity.
-
-### Genel Teknoloji & AI Problemleri
-- Aşırı teknik jargon, insandan uzak çözümler  
-- Sesli asistanlar yüzeysel ve robotik  
-- Parçalı arayüzler, frustrasyon yaratan deneyimler  
-- Doğal konuşma deneyimi eksik  
-- Gizlilik genellikle göz ardı ediliyor
-
-### Ensi'nin Çözdüğü Problemler (Smart Home)
-- Her cihazın ayrı uygulaması var—kafa karışıklığı  
-- Duvar panellerine mahkûm olmak—özgürlük kısıtlı  
-- Sistem sizi tanımıyor, öğrenmiyor  
-- Sistemi siz öğreniyorsunuz, o sizi değil  
-- İnternete bağlı olmayan ortamda çalışmıyor
-
-### EMA'nın Çözdüğü Problemler (Physical Spaces)
-- Kiosk ekranları kullanıcı dostu değil  
-- Tek dilli sistemler yabancıları dışlıyor  
-- Yaşlı, çocuk, engelli bireyler sistemin dışında kalıyor  
-- Menü oynatır, konuşmaz—yapay değil, plastik  
-- Kişiselleştirme yok, herkes için aynı deneyim
-
-> **"Solace karmaşıklığı konuşmayla değiştirir."**
+- Demo Talep Et / Request a Demo (Primary)
+- Hakkımızda / About Us
 
 ---
 
-## 3. VALUES — "Değerlerimiz ve Yaklaşımımız"
+## 2. PROBLEM — "Dijital Deneyim Neden Hâlâ Zor?"
 
-**Başlık**  
-İnsanı merkeze alan. Sesle çalışan. Gizliliğe saygılı.
+**Headline TR**
+Dijital Deneyim Neden Hâlâ Zor?
 
-### 4 Core Value
-1. **İnsanı Merkeze Alan** — Human-first design principles  
-2. **Sesle Çalışan** — Voice-powered interactions  
-3. **Gizliliğe Saygılı** — Privacy-respecting architecture  
-4. **Sezgisel Tasarım** — Elegant, minimal design across hardware and software
+**Headline EN**
+Why is the Digital Experience Still Difficult?
 
-*Bağlamı anlayan doğal konuşma sistemi*  
-*Context-aware, natural voice interaction*
+### General Problems
+
+- Ziyaretçiler aradıklarını bulamazsa saniyeler içinde rakibe geçiyor; çok katmanlı uygulamalar ve dil bariyerleri süreci yavaşlatıyor. / Visitors switch to a competitor in seconds if they can't find what they're looking for; multi-layered applications and language barriers slow down the process.
+- Kapsamlı menüler, dağınık ekran akışı / Comprehensive menus, cluttered screen flow
+- Farklı dillerde tutarsız kullanıcı deneyimi / Inconsistent user experience in different languages
+- Teknolojiye mesafeli veya ileri yaş kullanıcılar için erişimde güçlük / Difficulty in access for users who are distant from technology or of advanced age
+- Birbiriyle konuşmayan bilgi siloları ve sistemler / Information silos and systems that do not communicate with each other
+
+> **"Müşterinizin Satın Almasının Önündeki Tüm Engelleri Kaldırın" / "Remove All Barriers to Your Customer's Purchase"**
+
+---
+
+## 3. VALUES — "Değerlerimiz"
+
+**Headline**
+Değerlerimiz / Our Values
+
+### 4 Core Values
+
+1.  **İnsan Odaklılık / Human-Centricity** — Çözümlerimiz, insan davranışını temel alır; teknoloji uyum sağlar. / Our solutions are based on human behavior; technology adapts.
+2.  **Ses Önceliği / Voice Priority** — Konuşma, en doğal etkileşim katmanıdır; platformumuz bunun üzerine kurulur. / Conversation is the most natural layer of interaction; our platform is built on it.
+3.  **Gizlilik & Güvenlik / Privacy & Security** — Hibrit mimari ve veri sahibi kurum ilkesiyle tasarlanır. / Designed with a hybrid architecture and the principle of the data owner institution.
+4.  **İçgörü Odaklı Tasarım / Insight-Driven Design** — Diyalog analitiği, stratejik kararları besleyen net veriler sunar. / Dialogue analytics provides clear data that feeds strategic decisions.
 
 ---
 
 ## 4. MISSION & VISION — "Amacımız ve Vizyonumuz"
 
 ### Mission (Misyon)
-**TR:** Teknolojiyi, ses temelli ve sezgisel etkileşimlerle insanlaştırmak.  
-**EN:** To humanize technology through voice-based, intuitive interactions.
 
-### Vision (Vizyon)  
-**TR:** İnsanların teknolojiyle, birbiriyle konuşur gibi iletişim kurduğu bir dünya.  
-**EN:** A world where people interact with technology as naturally as they speak to each other.
+**TR:** Ses temelli, sezgisel etkileşimlerle teknolojiyi insanlaştırmak.
+**EN:** To humanize technology with voice-based, intuitive interactions.
+
+### Vision (Vizyon)
+
+**TR:** Kurumların, kullanıcılarıyla konuşur gibi iletişim kurduğu çok dilli dijital ekosistemler inşa etmek.
+**EN:** To build multilingual digital ecosystems where institutions communicate with their users as if they were talking.
 
 ---
 
-## 5. PRODUCTS — "Ürünlerimiz"
+## 5. TECHNOLOGY PLATFORM — "Teknoloji Platformu"
 
-### Ensi – Smart Home System
-**TR:** Sizi anlayan ev. Yerel işlemcili bir hub ve bağlamsal sesli asistan.  
-**EN:** Your home, now listening. A context-aware AI assistant powered by a local hub.
+**Headline TR**
+Konuşmaya Dayalı Yapay Zekâ Altyapısı
+
+**Headline EN**
+Conversational Artificial Intelligence Infrastructure
 
 **Features:**
-- Context-aware AI assistant
-- Local processing hub  
-- Multi-protocol compatibility
-- Privacy-first architecture
 
-**CTA:** [Ensi'yi Ziyaret Et → ensi.solace.com.tr]
+- **LLM + RAG çekirdeği / LLM + RAG core:** Şirkete özgü veriyle güçlenen, gerçeğe dayalı yanıtlar. / Fact-based answers powered by company-specific data.
+- **Çok dilli motor / Multilingual engine:** Türkçe, İngilizce, Arapça, Fransızca, Rusça dâhil. / Including Turkish, English, Arabic, French, Russian.
+- **API & SDK:** Hızlı entegrasyon, özelleştirilebilir model eğitimi. / Fast integration, customizable model training.
+- **Diyalog Analitiği / Dialogue Analytics:** Gelir artırıcı içgörüler, müşteri niyet haritaları. / Revenue-enhancing insights, customer intent maps.
 
 ---
 
-### EMA – AI for Physical Spaces
-**TR:** Mağaza içinde konuşarak ürün bulma, bilgi alma—dokunmadan, zahmetsizce.  
-**EN:** Conversational assistant that helps customers find products and information—just by talking.
+## 6. BUSINESS MODEL & ECOSYSTEM — "İş Modeli & Ekosistem"
+
+**Headline TR**
+Sürdürülebilir ve Ölçeklenebilir İş Ortaklıkları
+
+**Headline EN**
+Sustainable and Scalable Business Partnerships
 
 **Features:**
-- Multilingual conversation support
-- Product discovery through voice
-- Real-time inventory integration
-- Accessibility-focused design
 
-**CTA:** [EMA'yı Ziyaret Et → ema.solace.com.tr]
+- **Kullanım-bazlı lisanslama / Usage-based licensing**
+- **OEM & entegratör iş birlikleri / OEM & integrator collaborations:** Kurumsal müşterilere hızlı yayılım. / Rapid expansion to corporate customers.
+- **Veri paneli & yönetim arayüzü / Data panel & management interface:** İçgörü, içerik güncelleme ve model optimizasyonu tek merkezde. / Insight, content update, and model optimization in one center.
 
 ---
 
-## 6. HOW IT WORKS — "Nasıl Çalışır?"
+## 7. CTA — "Solace ile Geleceği Konuşun"
 
-**Başlık TR**  
-Söyleyin. Sistem anlar ve harekete geçer.
+**Headline EN**
+Let's Talk About the Future with Solace
 
-**Başlık EN**  
-Talk. The system understands and acts.
+**Headline TR**
+Solace ile Geleceği Konuşun
 
-### 3 Adım Process
-| Adım | Açıklama |
-|---|-----|
-| **1. Wake Word** | Aktivasyon kelimesi ile sistem devreye girer |
-| **2. AI Processing** | AI bağlamı ve niyeti çözümler |
-| **3. Device Response** | Bağlı cihazlar komutu yerine getirir |
+**Body TR:** Bugün iletişime geçin, doğal konuşmanın gücünü dijital deneyimlerinize ekleyin.
+**Body EN:** Get in touch today and add the power of natural conversation to your digital experiences.
 
-**Animasyon:** Kullanıcı → konuşma → sistem → aksiyon
-
----
-
-## 7. PROOF & TRACTION — "Gerçek Dünyada Çalışıyor"
-
-**Başlık**  
-Already running in the real world.
-
-### Traction Points
-- **5 pilot installations** in Turkey  
-- **Distributor partnership** secured  
-- **Hub and voice modules** built in-house  
-- **Compatible** with major protocols (KNX, Matter, Zigbee)
-
-### Market Validation
-- Residential smart home deployments
-- Retail space implementations  
-- Multi-language testing completed
-- B2B partnership network established
-
----
-
-## 8. TEAM — "Ekibimiz"
-
-**Başlık TR**  
-Girişimcilik ve teknoloji deneyimi
-
-**Başlık EN**  
-Entrepreneurial + technical expertise
-
-### Team Highlights
-- **Entrepreneurial + technical backgrounds**  
-- **AI, hardware, product & B2B expertise**  
-- **Based in Turkey, building for the world**  
-- **Multi-disciplinary approach** to voice AI solutions
-
-### Core Competencies
-- Artificial Intelligence & Machine Learning
-- Voice User Interface (VUI) Design  
-- Hardware & IoT Development
-- B2B Product Strategy
-
----
-
-## 9. CTA — "Teknolojinize Ses Getirelim"
-
-**Başlık EN**  
-Let's bring voice to your technology.
-
-### CTA Options
-- **[Demo Talep Et / Book a Demo]**
-- **[İş Ortağı Olun / Become a Partner]**  
-- **[İletişime Geçin / Contact Us]**
-
-*Solace creates intelligent conversations between humans and technology.*
-
----
-
-## 10. FOOTER — "İletişim ve Güven"
-
-**Sol:** Solace Logo + "Teknolojiyi Konuşma Kolaylığında Sunuyoruz."  
-**Orta:** Yasal linkler – KVKK | Gizlilik Politikası | Çerez Politikası  
-**Sağ:** İletişim – info@solace.com.tr | +90 212 000 00 00 + LinkedIn / Instagram / YouTube  
-**Alt:** © 2025 Solace
-
----
-
-### Complete Flow Summary
-1. **Hero** (Company mission + voice-first approach) → 
-2. **Problem** (Why voice AI matters across all spaces) → 
-3. **Values** (Human-first principles) → 
-4. **Mission/Vision** (Company purpose and direction) → 
-5. **Products** (Ensi & EMA showcase with links) →
-6. **How It Works** (Universal voice interaction process) → 
-7. **Proof** (Real-world validation and traction) → 
-8. **Team** (Expertise and credibility) → 
-9. **CTA** (Multiple engagement options) → 
+9. **CTA** (Multiple engagement options) →
 10. **Footer** (Contact, legal, and social presence)
 
 This flow positions Solace as the comprehensive voice AI company with two distinct but complementary products, emphasizing the unified mission of humanizing technology through natural conversation.

@@ -2,82 +2,64 @@
 
 import { useLocale } from '@/hooks/useLocale';
 import { solaceContent } from '@/lib/locales';
-import { Rocket, Eye, ChevronRight } from 'lucide-react';
-
-const contentData = {
-    tr: {
-        mission: 'Misyon',
-        missionTitle: 'Amacımız',
-        vision: 'Vizyon',
-        visionTitle: 'Hedefimiz'
-    },
-    en: {
-        mission: 'Mission',
-        missionTitle: 'Our Purpose',
-        vision: 'Vision',
-        visionTitle: 'Our Goal'
-    }
-};
+import { Rocket, Eye } from 'lucide-react';
 
 export default function SolaceMissionVisionSection() {
     const { locale } = useLocale();
-    const staticContent = contentData[locale];
-    const dynamicContent = solaceContent.missionVision;
+    const content = solaceContent.missionVision;
 
     return (
-        <section className='bg-transparent py-20 sm:py-32'>
-            <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
+        <section
+            id='about'
+            className='min-h-screen flex items-center justify-center bg-gradient-to-br from-white to-blue-50 relative py-20 sm:py-32'>
+            <div className='container mx-auto px-4 sm:px-6 lg:px-8 z-10'>
                 <div className='relative grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-stretch'>
                     {/* Mission Card */}
-                    <div className='bg-glassmorphism-card p-8 sm:p-12 rounded-2xl shadow-sm'>
+                    <div className='bg-white/60 backdrop-blur-lg border border-gray-200/80 rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col'>
                         <div className='flex items-center gap-4 mb-6'>
-                            <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-brand-blue text-white'>
-                                <Rocket className='h-6 w-6' />
+                            <div className='flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-200 to-indigo-200 text-[#2f318b]'>
+                                <Rocket className='h-8 w-8' />
                             </div>
                             <div>
-                                <span className='font-ui text-sm font-semibold uppercase tracking-wider text-brand-blue dark:text-accent-blue'>
-                                    {staticContent.mission}
+                                <span className='font-ui text-sm font-semibold uppercase tracking-wider text-[#2f318b]'>
+                                    {content.missionLabel[locale]}
                                 </span>
-                                <h3 className='font-serif text-2xl font-bold text-gray-900 dark:text-white'>
-                                    {staticContent.missionTitle}
+                                <h3 className='font-serif text-3xl font-bold text-gray-900'>
+                                    {content.missionTitle[locale]}
                                 </h3>
                             </div>
                         </div>
-                        <blockquote className='font-sans text-lg text-gray-700 leading-relaxed dark:text-gray-300'>
-                            "{dynamicContent.mission[locale]}"
+                        <blockquote className='font-sans text-lg text-gray-700 leading-relaxed flex-grow'>
+                            "{content.mission[locale]}"
                         </blockquote>
                     </div>
 
                     {/* Separator for Desktop */}
-                    <div className='hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center'>
-                        <div className='h-20 w-px bg-gray-200 dark:bg-gray-700' />
-                        <div className='mx-4 flex h-10 w-10 items-center justify-center rounded-full bg-glassmorphism'>
-                            <ChevronRight className='h-5 w-5 text-gray-400' />
-                        </div>
-                        <div className='h-20 w-px bg-gray-200 dark:bg-gray-700' />
+                    <div className='hidden lg:flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 items-center justify-center h-full'>
+                        <div className='h-1/3 w-px bg-gray-300' />
                     </div>
 
                     {/* Vision Card */}
-                    <div className='bg-glassmorphism-card p-8 sm:p-12 rounded-2xl shadow-sm'>
+                    <div className='bg-white/60 backdrop-blur-lg border border-gray-200/80 rounded-3xl p-8 sm:p-12 shadow-xl flex flex-col'>
                         <div className='flex items-center gap-4 mb-6'>
-                            <div className='flex h-12 w-12 items-center justify-center rounded-lg bg-accent-blue text-brand-blue'>
-                                <Eye className='h-6 w-6' />
+                            <div className='flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-sky-200 to-cyan-200 text-[#4da9e7]'>
+                                <Eye className='h-8 w-8' />
                             </div>
                             <div>
-                                <span className='font-ui text-sm font-semibold uppercase tracking-wider text-accent-blue dark:text-accent-blue'>
-                                    {staticContent.vision}
+                                <span className='font-ui text-sm font-semibold uppercase tracking-wider text-[#4da9e7]'>
+                                    {content.visionLabel[locale]}
                                 </span>
-                                <h3 className='font-serif text-2xl font-bold text-gray-900 dark:text-white'>
-                                    {staticContent.visionTitle}
+                                <h3 className='font-serif text-3xl font-bold text-gray-900'>
+                                    {content.visionTitle[locale]}
                                 </h3>
                             </div>
                         </div>
-                        <blockquote className='font-sans text-lg text-gray-700 leading-relaxed dark:text-gray-300'>
-                            "{dynamicContent.vision[locale]}"
+                        <blockquote className='font-sans text-lg text-gray-700 leading-relaxed flex-grow'>
+                            "{content.vision[locale]}"
                         </blockquote>
                     </div>
                 </div>
             </div>
         </section>
     );
-} 
+}

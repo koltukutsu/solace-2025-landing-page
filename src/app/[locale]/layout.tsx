@@ -15,6 +15,7 @@ import '@/styles/animations.css';
 
 import type { Locale } from '@/types/locales';
 import { LocaleProvider } from '@/hooks/useLocale';
+import { Analytics } from '@/components/analytics';
 
 // Elegant serif font for headlines and hero text - sophisticated and premium
 const cormorant = Cormorant_Garamond({
@@ -71,6 +72,7 @@ interface LocaleLayoutProps {
 
 const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
     const { locale } = await params;
+
     return (
         // ? https://github.com/pacocoursey/next-themes?tab=readme-ov-file#with-app
         // ? https://react.dev/reference/react-dom/client/hydrateRoot#suppressing-unavoidable-hydration-mismatch-errors
@@ -96,4 +98,4 @@ const LocaleLayout = async ({ children, params }: LocaleLayoutProps) => {
     );
 };
 
-export default LocaleLayout; 
+export default LocaleLayout;

@@ -1,77 +1,58 @@
----
-description:
-globs:
-alwaysApply: false
----
 # Solace Landing Page Detailed Experience – Bölüm Bölüm, Görsel Betimleme
 
-## 1. HERO – "Technology, at the ease of natural conversation"
+## 1. HERO – "Teknolojiyi Konuşma Kolaylığında Sunuyoruz"
 
 **Sahne:** Ekranın solunda derin lacivert‑gece fon üzerinde iri, parlak beyaz harflerle çift dil mesajı:
-**TR:** "Teknolojiyi konuşma kolaylığında sunuyoruz."
-**EN:** "Technology, at the ease of natural conversation."
+**TR:** "Teknolojiyi Konuşma Kolaylığında Sunuyoruz."
+**EN:** "We Offer Technology with the Ease of Conversation."
 Harflerin etrafında hafif konuşma dalgaları titriyor; sanki ses cümleyi canlandırıyor.
 
-**Karşı Denge:** Sağda, modern Solace logosu; logo etrafında minimal ses dalgaları animasyonu - Ensi ve EMA'yı temsil eden ikili dalga sistemi.
+**Karşı Denge:** Sağda, modern Solace logosu; logo etrafında minimal ses dalgaları animasyonu.
 
-**Alt Başlık:** İki dilde açıklama metni; Solace'ın yapay zekâ platformu yaklaşımını açıklıyor.
+**Alt Başlık:** İki dilde açıklama metni; Solace'ın yapay zekâ platformu yaklaşımını ve öncülüğünü vurguluyor.
 
 **İki CTA Buton:**
-- **"Solace'ı Keşfet"** – ana mavi düğme, hover'da ses dalgası efekti
-- **"Demo Talep Et"** – şeffaf kenarlı ikincil buton, platform showcase için
+
+- **"Demo Talep Et"** – ana mavi düğme, hover'da ses dalgası efekti
+- **"Hakkımızda"** – şeffaf kenarlı ikincil buton
 
 Ziyaretçi logoyu görürken ses dalgaları yavaşça genişler…
 
 ---
 
-## 2. PROBLEM – "Neden Solace Var?"
+## 2. PROBLEM – "Dijital Deneyim Neden Hâlâ Zor?"
 
-**Fon:** Koyu kömür grisi; arka planda bulanık teknoloji ve ev/mağaza fotoğrafları karışımı.
+**Fon:** Koyu kömür grisi; arka planda bulanık teknoloji ve ofis/mağaza ortamları karışımı.
 
-**Başlık:** "Teknoloji karmaşık, insanlar basitlik istiyor." – keskin, merkezi yerleşim.
+**Başlık:** "Dijital Deneyim Neden Hâlâ Zor?" – keskin, merkezi yerleşim.
 
-**Üç Kategori Problem Listesi:**
-
-### Genel Teknoloji Problemleri
+**Problem Listesi:**
 Her madde başında turuncu ⚠️ ikon:
-- Aşırı teknik jargon, insandan uzak çözümler
-- Sesli asistanlar yüzeysel ve robotik  
-- Parçalı arayüzler, frustrasyon
-- Doğal konuşma eksik
-- Gizlilik göz ardı
 
-### Ensi Problems (Smart Home)
-Ev ikonu ile başlayan maddeler:
-- Her cihazın ayrı uygulaması
-- Duvar panellerine mahkûmiyet
-- Sistem öğrenmiyor
-- Offline çalışmıyor
-
-### EMA Problems (Physical Spaces)  
-Mağaza ikonu ile başlayan maddeler:
-- Kiosk ekranları kullanıcı dostu değil
-- Tek dilli sistemler
-- Erişilebilirlik sorunları
-- Kişiselleştirme yok
+- Kapsamlı menüler, dağınık ekran akışı
+- Farklı dillerde tutarsız kullanıcı deneyimi
+- Teknolojiye mesafeli veya ileri yaş kullanıcılar için erişimde güçlük
+- Birbiriyle konuşmayan bilgi siloları ve sistemler
 
 **Empati Alıntısı:** Merkez kısımda ışıklı kutu:
-"Solace karmaşıklığı konuşmayla değiştirir."
+"Müşterinizin Satın Almasının Önündeki Tüm Engelleri Kaldırın"
 
 ---
 
-## 3. VALUES – "Değerlerimiz ve Yaklaşımımız"
+## 3. VALUES – "Değerlerimiz"
 
 **Arka Plan:** Soft gradient geçiş; teknoloji mavisi → insani sıcaklık turuncusu.
 
-**Başlık:** "İnsanı merkeze alan. Sesle çalışan. Gizliliğe saygılı."
+**Başlık:** "Değerlerimiz"
 
-**4 Değer Kartı** (square grid layout):
-1. **İnsanı Merkeze Alan** – insan silüeti ikonu, empati vurgulu
-2. **Sesle Çalışan** – ses dalgası animasyonu, mikrofon ile
-3. **Gizliliğe Saygılı** – kalkan ikonu, güvenlik vurgusu
-4. **Sezgisel Tasarım** – minimal çizgiler, estetik vurgu
+**4 Değer Kartı** (kare grid layout):
 
-**Empati Satırı:** "Bağlamı anlayan doğal konuşma sistemi" – altın çizgiyle vurgulanmış.
+1.  **İnsan Odaklılık** – insan silüeti ikonu, empati vurgulu
+2.  **Ses Önceliği** – ses dalgası animasyonu, mikrofon ile
+3.  **Gizlilik & Güvenlik** – kalkan ikonu, güvenlik vurgusu
+4.  **İçgörü Odaklı Tasarım** – analiz grafiği ikonu, veri vurgusu
+
+**Empati Satırı:** "Çözümlerimiz, insan davranışını temel alır; teknoloji uyum sağlar." – altın çizgiyle vurgulanmış.
 
 ---
 
@@ -81,113 +62,72 @@ Mağaza ikonu ile başlayan maddeler:
 
 **İki Kolon Layout:**
 
-**Sol - Mission:** 
+**Sol - Mission:**
 Başlık altında TR/EN geçişli metin:
-"Teknolojiyi, ses temelli ve sezgisel etkileşimlerle insanlaştırmak."
+"Ses temelli, sezgisel etkileşimlerle teknolojiyi insanlaştırmak."
 
 **Sağ - Vision:**
 İlham verici gelecek betimlemesi:
-"İnsanların teknolojiyle, birbiriyle konuşur gibi iletişim kurduğu bir dünya."
+"Kurumların, kullanıcılarıyla konuşur gibi iletişim kurduğu çok dilli dijital ekosistemler inşa etmek."
 
 Ortada sembolik bir köprü görseli; teknoloji ve insan arasındaki bağı temsil ediyor.
 
 ---
 
-## 5. PRODUCTS – "Ürünlerimiz"
-
-**Fon:** İki tonlu bölünmüş sayfa; sol taraf Ensi için ev atmosferi, sağ taraf EMA için mağaza atmosferi.
-
-**İki Ana Ürün Kartı:**
-
-### Ensi Card (Sol)
-- **Ensi logo** + ev simgesi
-- "Smart Home System" subtitle
-- "Sizi anlayan ev" açıklaması
-- 4 mini özellik ikonu: hub, ses, protokol, gizlilik
-- **CTA:** "Ensi'yi Keşfet" → ensi.solace.com.tr
-
-### EMA Card (Sağ)  
-- **EMA logo** + mağaza/fiziksel alan simgesi
-- "AI for Physical Spaces" subtitle
-- "Konuşarak ürün bulma" açıklaması  
-- 4 mini özellik ikonu: çok dil, ses, erişim, analiz
-- **CTA:** "EMA'yı Keşfet" → ema.solace.com.tr
-
-Kartlar hover'da hafifçe yükselir, kendi ürün sayfalarına yönlendirir.
-
----
-
-## 6. HOW IT WORKS – "Nasıl Çalışır?"
+## 5. TECHNOLOGY PLATFORM – "Teknoloji Platformu"
 
 **Fon:** Teknolojik mavi-gri; minimal devre board pattern.
 
-**Merkezi Flow Diagram:**
-Yatay 3 adım zaman çizgisi, aralarında veri akışı animasyonu:
+**Başlık:** "Konuşmaya Dayalı Yapay Zekâ Altyapısı"
 
-1. **🗣️ Wake Word** – ses dalgaları genişlerken "Hey Solace" metni
-2. **🧠 AI Processing** – beyin ikonu döner, algoritmik processing simülasyonu  
-3. **📱 Device Response** – çeşitli cihaz ikonları (ev/mağaza) eşzamanlı aktivasyon
+**4 Özellik Kartı:**
 
-**Animasyon Sequence:** Kullanıcı konuşuyor → AI düşünüyor → cihazlar cevaplıyor
+- **LLM + RAG Çekirdeği:** Şirkete özgü veriyle güçlenen yanıtlar.
+- **Çok Dilli Motor:** Global erişim için dil bariyerlerini ortadan kaldırır.
+- **API & SDK:** Hızlı ve esnek entegrasyon imkanı.
+- **Diyalog Analitiği:** Stratejik kararlar için değerli içgörüler.
 
-**Alt Açıklama:** "Konuşma kolaylığında teknoloji kontrolü"
-
----
-
-## 7. PROOF & TRACTION – "Gerçek Dünyada Çalışıyor"
-
-**Fon:** Güven veren koyu yeşil; minimal success pattern.
-
-**4 Traction Kartı** (2x2 grid):
-- **"5 pilot kurulum"** – Türkiye harita ikonu
-- **"Distribütör ağı"** – network/partnership simgesi
-- **"Yerli üretim"** – Türk bayrağı + manufacturing ikonu  
-- **"Protokol uyumlu"** – KNX, Matter, Zigbee logoları
-
-**Market Validation Visual:** 
-Gerçek deployment fotoğrafları (anonimleştirilmiş) + istatistik grafikleri
-
-**Güven Mesajı:** "Teknoloji vizyonu, gerçek dünya sonuçları"
+**Animasyon:** Veri akışını ve bileşenlerin etkileşimini gösteren bir animasyon.
 
 ---
 
-## 8. TEAM – "Ekibimiz"
+## 6. BUSINESS MODEL & ECOSYSTEM – "İş Modeli & Ekosistem"
 
-**Fon:** Profesyonel koyu lacivert; kurumsal güven hissi.
+**Fon:** Güven veren kurumsal mavi.
 
-**Team Highlight Kartları:**
-- **Girişimcilik Deneyimi** – startup/business ikonu
-- **Teknik Uzmanlık** – AI/tech ikonu  
-- **Türkiye Merkez** – lokasyon + global expansion ikonu
-- **Multi-disiplin** – çeşitli uzmanlık alanları
+**Başlık:** "Sürdürülebilir ve Ölçeklenebilir İş Ortaklıkları"
 
-**Visual Element:** Team silhouettes ile abstract team representation
-**Credibility Statement:** "Yapay zeka, donanım, ürün geliştirmede uzman ekip"
+**3 Model Kartı:**
+
+- **Kullanım Bazlı Lisanslama:** İhtiyacınıza göre ölçeklenen esnek model.
+- **OEM & Entegratör İş Birlikleri:** Geniş kurumsal ağlara hızlı erişim.
+- **Veri Paneli & Yönetim Arayüzü:** İçgörü, optimizasyon ve içerik yönetimi tek merkezde.
 
 ---
 
-## 9. CTA – "Teknolojinize Ses Getirelim"
+## 7. CTA – "Solace ile Geleceği Konuşun"
 
 **Sahne:** Full-width mavi gradient; odak ışığı CTA merkezi vurguluyor.
 
-**3 Ana CTA Seçeneği** (büyük butonlar):
-- **"Demo Talep Et"** – showcase ve canlı demonstration
-- **"İş Ortağı Olun"** – partnership ve collaboration fırsatları  
-- **"İletişime Geçin"** – direct contact ve özel çözümler
+**Başlık:** "Solace ile Geleceği Konuşun"
 
-**Support Tagline:** "Solace creates intelligent conversations between humans and technology."
+**Alt Metin:** "Bugün iletişime geçin, doğal konuşmanın gücünü dijital deneyimlerinize ekleyin."
+
+**Ana CTA Butonu:**
+
+- **"İletişime Geçin"** – direct contact ve özel çözümler
 
 **Visual:** Minimal teknoloji iconography + konuşma bubble'ları
 
 ---
 
-## 10. FOOTER – "İletişim ve Güven"
+## 8. FOOTER – "İletişim ve Güven"
 
 **Düzen:** Üç sütun modern footer, koyu lacivert zemin.
 
-**Sol:** Solace logo + ana slogan rotating animation
-**Orta:** Yasal compliance linkler + düzenli güncelleme
-**Sağ:** Multi-channel iletişim + sosyal presence
+**Sol:** Solace logo + ana slogan
+**Orta:** Yasal linkler
+**Sağ:** Multi-channel iletişim + sosyal medya ikonları
 
 **Alt Banner:** Copyright + "Teknolojiyi Konuşma Kolaylığında Sunuyoruz"
 
@@ -199,14 +139,17 @@ Gerçek deployment fotoğrafları (anonimleştirilmiş) + istatistik grafikleri
 
 Bu landing page ziyaretçiye şunu hissettirir:
 
-1. **Merakla başlar** (güçlü mission statement),
-2. **Problemleri tanır** (hem ev hem iş yaşamında),  
-3. **Değerlerle bağ kurar** (insan-merkezi yaklaşım),
-4. **Vizyonu paylaşır** (teknoloji-insan uyumu),
-5. **Ürünleri keşfeder** (Ensi ve EMA differentiation),
-6. **Süreci anlar** (basit 3-adım),
-7. **Güven kazanır** (gerçek traction),
-8. **Ekibe inanır** (uzmanlık credibility),
+1.  **Merakla başlar** (güçlü mission statement),
+2.  **Problemi anlar** (dijital deneyim zorlukları),
+3.  **Değerlerle bağ kurar** (insan-merkezli yaklaşım),
+4.  **Vizyonu paylaşır** (teknoloji-insan uyumu),
+5.  **Teknolojiyi keşfeder** (güçlü altyapı),
+6.  **İş modelini anlar** (esnek ortaklıklar),
+7.  **Eyleme geçer** (net CTA),
+8.  **Bağlantıda kalır** (contact ve follow-up).
+
+Solace brand'i böylece hem teknoloji liderliği hem de insani yaklaşım dengesiyle, ziyaretçide kalıcı güven ve ilgi uyandırır. Her bölüm, bir sonrakine doğal geçiş sağlar ve birleşik şirket hikayesini destekler.
+
 9. **Eyleme geçer** (multiple CTA options),
 10. **Bağlantıda kalır** (contact ve follow-up).
 

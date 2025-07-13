@@ -27,28 +27,16 @@ export interface HeroContent {
     secondaryCTA: LocalizedContent;
 }
 
-export interface Product {
-    name: string;
-    subtitle: LocalizedContent;
-    description: LocalizedContent;
-    features: LocalizedArray;
-    ctaText: LocalizedContent;
-    logoSrc: string;
-    link: string;
-}
-
-export interface ProductsContent {
-    headline: LocalizedContent;
-    subtitle: LocalizedContent;
-    products: Product[];
-    bottomStatement: LocalizedContent;
-}
-
 export interface ProblemContent {
     headline: LocalizedContent;
     subtitle: LocalizedContent;
     problems: LocalizedArray;
-    empathyQuote: LocalizedContent;
+}
+
+export interface ProblemDeepDiveContent {
+    headline: LocalizedContent;
+    problems: LocalizedArray;
+    solutionStatement: LocalizedContent;
 }
 
 export interface ValuesContent {
@@ -59,32 +47,32 @@ export interface ValuesContent {
         title: LocalizedContent;
         description: LocalizedContent;
     }>;
-    empathyLine: LocalizedContent;
 }
 
 export interface MissionVisionContent {
     mission: LocalizedContent;
     vision: LocalizedContent;
+    missionLabel: LocalizedContent;
+    visionLabel: LocalizedContent;
+    missionTitle: LocalizedContent;
+    visionTitle: LocalizedContent;
 }
 
-export interface TeamContent {
+export interface TechnologyPlatformContent {
     headline: LocalizedContent;
     subtitle: LocalizedContent;
-    highlights: Array<{
-        icon: string;
-        text: LocalizedContent;
+    features: Array<{
+        title: LocalizedContent;
+        description: LocalizedContent;
     }>;
-    credibilityStatement: LocalizedContent;
 }
 
-export interface ProofContent {
+export interface BusinessModelContent {
     headline: LocalizedContent;
-    subtitle: LocalizedContent;
-    tractionPoints: Array<{
-        icon: string;
-        text: LocalizedContent;
+    models: Array<{
+        title: LocalizedContent;
+        description: LocalizedContent;
     }>;
-    trustMessage: LocalizedContent;
 }
 
 export interface CtaContent {
@@ -96,22 +84,12 @@ export interface CtaContent {
     }>;
 }
 
-export interface HowItWorksContent {
-    headline: LocalizedContent;
-    subtitle: LocalizedContent;
-    steps: Array<{
-        icon: string;
-        title: LocalizedContent;
-        description: LocalizedContent;
-    }>;
-    description: LocalizedContent;
-}
-
 export interface FooterContent {
     tagline: LocalizedContent;
     legal: LocalizedContent;
     contact: LocalizedContent;
     copyright: LocalizedContent;
+    companyName: LocalizedContent;
     links: {
         dataProtection: LocalizedContent;
         privacyPolicy: LocalizedContent;
@@ -128,12 +106,53 @@ export interface SolaceContent {
     navigation: NavigationContent;
     hero: HeroContent;
     problem: ProblemContent;
+    problemDeepDive: ProblemDeepDiveContent;
     values: ValuesContent;
     missionVision: MissionVisionContent;
-    products: ProductsContent;
-    howItWorks: HowItWorksContent;
-    team: TeamContent;
-    proof: ProofContent;
+    technologyPlatform: TechnologyPlatformContent;
+    businessModel: BusinessModelContent;
     cta: CtaContent;
     footer: FooterContent;
+    contactModal: ContactModalContent;
+    products: ProductSectionContent;
+}
+
+export interface ContactModalContent {
+    title: LocalizedContent;
+    description: LocalizedContent;
+    nameLabel: LocalizedContent;
+    namePlaceholder: LocalizedContent;
+    emailLabel: LocalizedContent;
+    emailPlaceholder: LocalizedContent;
+    submitButton: {
+        initial: LocalizedContent;
+        loading: LocalizedContent;
+        success: LocalizedContent;
+    };
+    toast: {
+        error: {
+            fillAllFields: LocalizedContent;
+            invalidEmail: LocalizedContent;
+            generic: LocalizedContent;
+            connection: LocalizedContent;
+        };
+        success: LocalizedContent;
+    };
+    successAnimation: {
+        title: LocalizedContent;
+        description: LocalizedContent;
+    };
+}
+
+export interface ProductSectionContent {
+    headline: LocalizedContent;
+    products: Array<{
+        name: string;
+        logo: string;
+        link: string;
+        headline: LocalizedContent;
+        description: LocalizedContent;
+        features: LocalizedArray;
+        learnMore: LocalizedContent;
+    }>;
 }

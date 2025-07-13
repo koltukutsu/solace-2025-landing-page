@@ -1,162 +1,88 @@
----
-description:
-globs:
-alwaysApply: false
----
 # 🌐 SOLACE LANDING PAGE - Detailed React Components Structure
 
 ## Sleek | Minimal | Conversational | B2B & Visionary
 
 <LandingPage>
 ├─ <HeroSection>
-│   // 📄 İÇERİK (Türkçe & İngilizce)
-│   //   • Sol kolon (≈%60):
-│   //       – H1 Tagline (çok büyük): "Teknolojiyi konuşma kolaylığında sunuyoruz."
-│   //       – EN: "Technology, at the ease of natural conversation."
-│   //       – Alt başlık TR: "Solace, yapay zekâyla çalışan sistemleri konuşma temelli sezgisel yardımcılar haline getirir. Uygulama yok, karmaşa yok. Sadece konuşun."
-│   //       – Alt başlık EN: "Solace creates AI-powered systems that turn smart spaces into intuitive companions. No apps, no confusion. Just talk."
-│   //       – Ana CTA butonu: "Solace'ı Keşfet" / "Explore Solace"
-│   //       – Demo link: "Demo Talep Et" / "Request a Demo"
-│   //   • Sağ kolon (≈%40): Solace logo görseli + konuşma dalgaları animasyonu
-│   //     - Logo: /branding/solace_logo_small.svg (aspect-ratio: 1:1, size: 200x200px)
-│   //   • Arka plan: #0e0f1a→#1a2333 degrade.
-│   // ⚙️ KOD PROPS
-│   //   tagline, subheading, logoSrc, primaryCTA, demoLink, language
+│   // 📄 CONTENT (Turkish & English)
+│   //   • Headline: "Teknolojiyi Konuşma Kolaylığında Sunuyoruz." / "We Offer Technology with the Ease of Conversation."
+│   //   • Subheadline: "Solace: Çok dilli, yapay zekâ odaklı ses teknolojilerinin öncüsü..."
+│   //   • CTAs: "Demo Talep Et", "Hakkımızda"
+│   //   • Visual: Solace logo + voice wave animation
 │
 ├─ <ProblemSection>
-│   // 📄 İÇERİK
-│   //   • Başlık: "Neden Solace Var?"
-│   //   • Genel Teknoloji Problemleri (❗ ikonlu):
-│   //        - "Aşırı teknik jargon, insandan uzak çözümler"
-│   //        - "Sesli asistanlar yüzeysel ve robotik"
-│   //        - "Parçalı arayüzler, frustrasyon yaratan deneyimler"
-│   //        - "Doğal konuşma deneyimi eksik"
-│   //        - "Gizlilik genellikle göz ardı ediliyor"
-│   //   • Empati alıntısı: "Solace karmaşıklığı konuşmayla değiştirir." (italik, merkez)
-│   // ⚙️ PROPS
-│   //   headline, problems, empathyQuote
+│   // 📄 CONTENT
+│   //   • Headline: "Dijital Deneyim Neden Hâlâ Zor?" / "Why is the Digital Experience Still Difficult?"
+│   //   • Problems (List): "Kapsamlı menüler...", "Farklı dillerde tutarsız deneyim..."
+│   //   • Empathy Quote: "Müşterinizin Satın Alması Önündeki Tüm Engelleri Kaldırın"
 │
 ├─ <ValuesSection>
-│   // 📄 İÇERİK
-│   //   • Başlık: "Değerlerimiz ve Yaklaşımımız"
-│   //   • 4 Değer kartı:
-│   //        1) İnsanı Merkeze Alan – "Human-first design principles"
-│   //        2) Sesle Çalışan – "Voice-powered interactions"
-│   //        3) Gizliliğe Saygılı – "Privacy-respecting architecture"
-│   //        4) Sezgisel Tasarım – "Elegant, minimal design across hardware and software"
-│   //   • Alt empati satırı: "Bağlamı anlayan doğal konuşma sistemi"
-│   // ⚙️ PROPS
-│   //   headline, values, empathyLine
+│   // 📄 CONTENT
+│   //   • Headline: "Değerlerimiz" / "Our Values"
+│   //   • 4 Value cards: İnsan Odaklılık, Ses Önceliği, Gizlilik & Güvenlik, İçgörü Odaklı Tasarım
 │
 ├─ <MissionVisionSection>
-│   // 📄 İÇERİK
-│   //   • İki kolon layout:
-│   //       – Sol: Misyon – "Teknolojiyi, ses temelli ve sezgisel etkileşimlerle insanlaştırmak."
-│   //       – Sağ: Vizyon – "İnsanların teknolojiyle, birbiriyle konuşur gibi iletişim kurduğu bir dünya."
-│   //   • EN versions provided
-│   // ⚙️ PROPS
-│   //   mission, vision, language
+│   // 📄 CONTENT
+│   //   • Mission: "Ses temelli, sezgisel etkileşimlerle teknolojiyi insanlaştırmak."
+│   //   • Vision: "Kurumların, kullanıcılarıyla konuşur gibi iletişim kurduğu çok dilli dijital ekosistemler inşa etmek."
 │
-├─ <ProductsSection>
-│   // 📄 İÇERİK
-│   //   • Başlık: "Ürünlerimiz"
-│   //   • İki ürün kartı:
-│   //        1) Ensi – Smart Home System
-│   //           - Logo: /branding/ensi_logo.png (aspect-ratio: 16:9, size: 320x180px)
-│   //           - "Sizi anlayan ev. Yerel işlemcili bir hub ve bağlamsal sesli asistan."
-│   //           - Link: ensi.solace.com.tr
-│   //        2) EMA – AI for Physical Spaces  
-│   //           - Logo: /branding/ema_logo.png (aspect-ratio: 16:9, size: 320x180px)
-│   //           - "Mağaza içinde konuşarak ürün bulma, bilgi alma—dokunmadan, zahmetsizce."
-│   //           - Link: ema.solace.com.tr
-│   //   • CTA: Ürün sayfalarına yönlendirme
-│   // ⚙️ PROPS
-│   //   headline, products, language
+├─ <TechnologyPlatformSection>
+│   // 📄 CONTENT
+│   //   • Headline: "Konuşmaya Dayalı Yapay Zekâ Altyapısı" / "Conversational Artificial Intelligence Infrastructure"
+│   //   • Features (4 cards): LLM + RAG, Multilingual Engine, API & SDK, Dialogue Analytics
 │
-├─ <HowItWorksSection>
-│   // 📄 İÇERİK
-│   //   • Başlık: "Nasıl Çalışır?"
-│   //   • 3 Adım:
-│   //        1. Wake Word – "Aktivasyon kelimesi ile sistem devreye girer"
-│   //        2. AI Processing – "AI bağlamı ve niyeti çözümler"
-│   //        3. Device Response – "Bağlı cihazlar komutu yerine getirir"
-│   //   • Animasyon: Kullanıcı → konuşma → sistem → aksiyon
-│   // ⚙️ PROPS
-│   //   steps, animationFlow
-│
-├─ <ProofSection>
-│   // 📄 İÇERİK
-│   //   • Başlık: "Gerçek Dünyada Çalışıyor"
-│   //   • Traction points:
-│   //        - "Türkiye'de 5 pilot kurulum"
-│   //        - "Distribütör ağı kuruldu"
-│   //        - "Hub ve sesli modüller yerli üretim"
-│   //        - "Tüm yaygın protokollerle uyumlu"
-│   // ⚙️ PROPS
-│   //   headline, tractionPoints
-│
-├─ <TeamSection>
-│   // 📄 İÇERİK
-│   //   • Başlık: "Ekibimiz"
-│   //   • Team highlights:
-│   //        - "Girişimcilik ve mühendislik geçmişi"
-│   //        - "Yapay zekâ, donanım, ürün ve B2B deneyimi"
-│   //        - "Türkiye'de geliştirildi, dünyaya açılıyor"
-│   // ⚙️ PROPS
-│   //   headline, teamHighlights
+├─ <BusinessModelSection>
+│   // 📄 CONTENT
+│   //   • Headline: "Sürdürülebilir ve Ölçeklenebilir İş Ortaklıkları" / "Sustainable and Scalable Business Partnerships"
+│   //   • Models (3 cards): Usage-based licensing, OEM & integrator collaborations, Data panel & management interface
 │
 ├─ <CTASection variant="primary">
-│   // 📄 İÇERİK
-│   //   • Başlık: "Teknolojinize Ses Getirelim"
-│   //   • CTA butonları:
-│   //        - "Demo Talep Et" / "Book a Demo"
-│   //        - "İş Ortağı Olun" / "Become a Partner"  
-│   //        - "İletişime Geçin" / "Contact Us"
-│   // ⚙️ PROPS
-│   //   headline, ctaButtons, language
+│   // 📄 CONTENT
+│   //   • Headline: "Solace ile Geleceği Konuşun" / "Let's Talk About the Future with Solace"
+│   //   • Body: "Bugün iletişime geçin, doğal konuşmanın gücünü dijital deneyimlerinize ekleyin."
+│   //   • CTA Button: "İletişime Geçin" / "Contact Us"
 │
 └─ <FooterSection>
-    // 📄 İÇERİK
-    //   • Sol: Solace logo + slogan "Teknolojiyi Konuşma Kolaylığında Sunuyoruz."
-    //     - Logo: /branding/solace_logo_small.svg (aspect-ratio: 1:1, size: 120x120px)
-    //   • Orta: Yasal linkler – "KVKK", "Gizlilik Politikası", "Çerez Politikası"
-    //   • Sağ: İletişim – info@solace.com.tr | +90 212 000 00 00 + LinkedIn / Instagram / YouTube ikonları
-    //   • Alt: © 2025 Solace
-    // ⚙️ PROPS
-    //   logoSrc, slogan, legalLinks, contact, socials
+    // 📄 CONTENT
+    //   • Solace logo + slogan
+    //   • Legal links
+    //   • Contact info + social media icons
+    //   • Copyright notice
 
 ## 🎨 **Visual Design Elements**
 
 ### Icons & Animations
-- **Voice Wave Icon**: Konuşma dalgaları animasyonu
-- **AI Processing Icon**: Yapay zeka işlem animasyonu  
-- **Device Connection Icon**: Cihaz bağlantı simulasyonu
-- **Protocol Icons**: KNX, Matter, Zigbee uyumluluk simgeleri
-- **Language Icons**: Çok dilli destek gösterimi
+
+- **Voice Wave Icon**: Animated voice waves
+- **AI Processing Icon**: AI processing animation
+- **Analytics Icon**: Data and analytics visualization
 
 ### Color Scheme
+
 - **Primary**: #0e0f1a→#1a2333 (Hero gradient)
-- **Accent**: Konuşma arayüzü için mavi tonları
-- **Success**: Özellikler için yeşil tonları
-- **Technology**: Gelişmiş teknoloji için mor tonları
+- **Accent**: Blue tones for conversational UI
+- **Highlight**: Orange/Gold for emphasis
 
 ### Interactive Elements
-- **Voice Demo**: Tıklanabilir konuşma demonstrasyonu
-- **Product Cards**: Hover efekti ile ürün detayları
-- **Language Switcher**: TR/EN geçiş animasyonu
-- **CTA Animations**: Buton hover ve click efektleri
+
+- **Language Switcher**: TR/EN toggle
+- **CTA Animations**: Button hover and click effects
 
 ---
 
 ### Component Flow Summary
-1. **Hero** (Solace brand + values) → 
-2. **Problem** (Why Solace exists) → 
-3. **Values** (Human-first approach) → 
-4. **Mission/Vision** (Company purpose) → 
-5. **Products** (Ensi & EMA showcase) →
-6. **How It Works** (Technical process) → 
-7. **Proof** (Real-world traction) → 
-8. **Team** (Expertise showcase) → 
-9. **CTA** (Multiple action options) → 
-10. **Footer** (Contact & legal)
-</LandingPage>
+
+1.  **Hero** (Brand mission) →
+2.  **Problem** (Justification for Solace) →
+3.  **Values** (Our principles) →
+4.  **Mission/Vision** (Our purpose) →
+5.  **Technology Platform** (Our core tech) →
+6.  **Business Model** (Our partnership approach) →
+7.  **CTA** (Call to action) →
+8.  **Footer** (Contact & legal)
+    </LandingPage>
+
+9.  **Team** (Expertise showcase) →
+10. **CTA** (Multiple action options) →
+11. **Footer** (Contact & legal)
+    </LandingPage>
